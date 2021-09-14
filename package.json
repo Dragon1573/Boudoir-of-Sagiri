@@ -5,7 +5,8 @@
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
     "updateTheme": "yarn remove vuepress-theme-vdoing && rm -rf node_modules && yarn install && yarn add vuepress-theme-vdoing -D",
-    "clean": "rm -rf dist && echo 'Contents cleaned!'"
+    "clean": "rm -rf dist && echo 'Contents cleaned!'",
+    "generate": "node utils/editFrontmatter.js"
   },
   "license": "CC-BY-SA-4.0",
   "devDependencies": {
