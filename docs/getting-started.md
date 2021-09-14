@@ -1,0 +1,115 @@
+---
+author: 
+  name: Dragon1573
+  link: https://github.com/Dragon1573
+---
+
+# 快速上手
+
+## 简介
+
+[*Plotly* Python 库](https://plotly.com/python/)是一个可交互的、开源的图表绘制库，支持超过 40 种不同的图表类型，涵盖了一大堆统计学、金融学、地理学、科学和三维图表等各大领域。
+
+基于其自身的 [JavaScript 库版本](https://plotly.com/javascript/)，*Plotly* 允许用户创建美丽的、可交互的、基于网页的可视化效果，这些可视化图表可以在 Jupyter Notebook 中被显示、保存到独立的 HTML 文档，亦或是通过 *Dash* 作为纯 Python 构建网页应用程序的一部分来提供服务（PS：我们不会在后面提到它，我们只是用 *Plotly* 来可视化图表而已）。有时，官方会使用 `plotly.py` 来指代 Python 发行版，用来和 JavaScript 发行版区分开来。
+
+感谢与 *[Kaleido](https://medium.com/plotly/introducing-kaleido-b03c4b7b1d81)* 图像导出工具的深度集成，*Plotly* 也为包括桌面编辑器（*QtConsole*、*Spyder*、*PyCharm* 和最近上线的 *DataSpell*）和静态文档出版（将 *Jupyter Notebook* 导出为具有高质量矢量图的 PDF 文档）在内的非网页内容提供了良好的支持。
+
+这篇入门会讲解如何安装 *Plotly* 。在你完成安装之后，将有 3 条学习路线供你选择：
+
+1. 直接看相关图表绘制的示例代码
+   - [基础图表](https://plotly.com/python/basic-charts/)
+   - [统计学图表](https://plotly.com/python/statistical-charts/)
+   - [科学图表](https://plotly.com/python/scientific-charts/)
+   - [金融图表](https://plotly.com/python/financial-charts/)
+   - [地图](https://plotly.com/python/maps/)
+   - [三维图表](https://plotly.com/python/3d-charts/)
+2. 深挖 *Plotly* 底层原理（PS：一般不是会用就行了嘛？真有人挖原理的？？？）
+   - [图表的结构](https://plotly.com/python/figure-structure/)
+   - [如何创建和更新图表](https://plotly.com/python/creating-and-updating-figures/)
+   - [如何显示图表](https://plotly.com/python/renderers/)
+   - [如何用模板为图表配置主题](https://plotly.com/python/templates/)
+   - [如何导出图表为不同的格式](https://plotly.com/python/static-image-export/)
+   - [Plotly Express 高阶 API](https://plotly.com/python/plotly-express/)
+3. 直接开啃 [Python API 参考](https://plotly.com/python-api-reference) 或 [图表参考](https://plotly.com/python/reference)（PS：求求你们，别卷了:cry:）
+
+## 安装
+
+- 通过 `pip` 进行安装：`pip install plotly==5.3.1`
+- 通过 `conda` 进行安装：`conda install -c plotly plotly=5.3.1`
+
+这个软件包已经包含了将图表导出到独立 HTML 文件所需的全部内容。
+
+```python
+from plotly import graph_objects as go
+
+fig = go.Figure(data=go.Bar(y=[2, 3, 1]))
+fig.write_html('first_figure.html', auto_open=True)
+```
+
+## JupyterLab 支持
+
+为了使用 *[JupyterLab](https://jupyterlab.readthedocs.io/en/stable/)* ，你需要安装 `jupyterlab` 和 `ipywidgets` 。
+
+- `pip install "jupyterlab>=3" "ipywidgets>=7.6"`
+- `conda install "jupyterlab>=3" "ipywidgets>=7.6"`
+
+这些软件包涵盖了用于运行 *JupyterLab* 的所有内容。
+
+```python
+from plotly import graph_objects as go
+
+fig = go.Figure(data=go.Bar(y=[2, 3, 1]))
+fig.show()
+```
+
+你也可以使用 `FigureWidget` 对象来绘制图表：
+
+```python
+from plotly import graph_objects as go
+
+fig = go.FigureWidget(data=go.Bar(y=[2, 3, 1])); fig
+```
+
+> **注意：**
+>
+> 以上指导适用于 *JupyterLab v3.x* 系列，对于 v2.x 及前序版本，你需要运行以下命令来安装所需的 *JupyterLab* 插件（这些插件需要你提前安装 [*Node.js*](https://nodejs.org/)）：
+>
+> ```bash
+> jupyter labextension install jupyterlab-plotly@5.3.1 @jupyter-widgets/jupyterlab-manager
+> ```
+
+## Jupyter Notebook 支持
+
+为了使用经典的 *Jupyter Notebook* ，你需要安装 `notebook` 和 `ipywidgets` 。
+
+- `pip install "notebook>=5.3" "ipywidgets>=7.5"`
+- `conda install "notebook>=5.3" "ipywidgets>=7.5"`
+
+## 静态图片导出
+
+*Plotly.py* 支持 [静态图片导出](https://plotly.com/python/static-image-export/) ，你可以选用 [*Kaleido*](https://github.com/plotly/Kaleido) 软件包（首选）或是 [*Orca*](https://github.com/plotly/orca) 命令行工具。
+
+### Kaleido
+
+- `pip install -U kaleido`
+- `conda install -c plotly python-kaleido`
+
+### Orca
+
+尽管 *Kaleido* 因为其易于安装而被当作首选方案，你也依旧可以使用 *Orca* 命令行工具和 *psutil* Python 工具包。
+
+*psutil* 可以通过 *pip* 或 *conda* 进行安装：
+
+- `conda install -c plotly psutil`
+- `pip install psutil`
+
+*Orca* 仅在 *conda* 中有所提供，或者可以参考它的 [项目说明](https://github.com/plotly/orca) 进行手动安装（PS：如果你愿意折腾的话）。
+
+- `conda install -c plotly plotly-orca==1.3.1`
+
+## 扩展地理信息支持
+
+*Plotly.py* 中的少数功能依赖于体积庞大的地理轮廓信息文件，「国家分级统计图」就是这样的一个例子。这些图形文件统一以额外的 `plotly-geo` 包进行分发，它可以通过 `pip` 或 `conda` 进行安装。
+
+- `pip install plotly-geo==1.0.0`
+- `conda install -c plotly plotly-geo=1.0.0`
