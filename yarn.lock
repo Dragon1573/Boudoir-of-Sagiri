@@ -8324,7 +8324,6 @@ fsevents@~2.3.2:
     markdown-it-mathjax3: ^3.0.0-0
     vuepress: ^1.8.2
     vuepress-plugin-one-click-copy: ^1.0.2
-    vuepress-plugin-thirdparty-search: ^1.0.2
     vuepress-plugin-zooming: ^1.1.7
     vuepress-theme-vdoing: ^1.8.3
     yamljs: ^0.3.0
@@ -11135,13 +11134,6 @@ fsevents@~2.3.2:
   dependencies:
     smoothscroll-polyfill: ^0.4.3
   checksum: 4e7a2099a7a03a0400e735951ac3d4a82b708500e289067c64bc8cfe0d1d1c02f6bc1b7d2914e602a1dcf8497d40d9d751b55070beca29759d55374e5d7aae50
-  languageName: node
-  linkType: hard
-
-"vuepress-plugin-thirdparty-search@npm:^1.0.2":
-  version: 1.0.2
-  resolution: "vuepress-plugin-thirdparty-search@npm:1.0.2"
-  checksum: 43d9b29d91492b2b735333abfbd5d2d8c9610b8d9e63a7690662ad3725624470cba267219a1ae1a0d82b18202c7e5c3deaac8da6ab07552dcd1d1544258947c0
   languageName: node
   linkType: hard
 
