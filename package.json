@@ -5,7 +5,7 @@
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
     "update": "yarn remove vuepress-theme-vdoing && rm -rf node_modules && yarn install && yarn add vuepress-theme-vdoing -D",
-    "clean": "rm -rf dist && echo 'Contents cleaned!'",
+    "clean": "rimraf ./dist && echo 'Contents cleaned!'",
     "refresh": "node utils/editFrontmatter.js"
   },
   "license": "CC-BY-SA-4.0",
@@ -13,6 +13,7 @@
     "dayjs": "^1.9.7",
     "inquirer": "^7.1.0",
     "json2yaml": "^1.1.0",
+    "rimraf": "^3.0.2",
     "vuepress": "^1.8.2",
     "vuepress-plugin-one-click-copy": "^1.0.2",
     "vuepress-plugin-zooming": "^1.1.7",
