@@ -4,9 +4,10 @@
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
-    "update": "yarn remove vuepress-theme-vdoing && rm -rf node_modules && yarn install && yarn add vuepress-theme-vdoing -D",
+    "update": "yarn remove vuepress-theme-vdoing && rimraf ./node_modules && yarn install && yarn add vuepress-theme-vdoing -D",
     "clean": "rimraf ./dist && echo 'Contents cleaned!'",
-    "refresh": "node utils/editFrontmatter.js"
+    "refresh": "node utils/editFrontmatter.js",
+    "test": "yarn build && yarn clean"
   },
   "license": "CC-BY-SA-4.0",
   "devDependencies": {
