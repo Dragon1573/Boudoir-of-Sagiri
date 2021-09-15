@@ -12,6 +12,12 @@ module.exports = {
   editLinks: false,
 
   /* 开始：Vdoing 主题相关配置 */
+  category: false,
+  tag: false,
+  archive: false,
+  updateBar: {
+    showToArticle: false
+  },
   rightMenuBar: true,
   sidebarOpen: true,
   pageButton: true,
