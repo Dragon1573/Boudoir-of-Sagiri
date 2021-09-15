@@ -6,3 +6,6 @@ data:
   author:
     name: Dragon1573
     link: https://github.com/Dragon1573
+  tags:
+    - Python
+    - Plotly
