@@ -8322,6 +8322,7 @@ fsevents@~2.3.2:
     inquirer: ^7.1.0
     json2yaml: ^1.1.0
     markdown-it-mathjax3: ^3.0.0-0
+    rimraf: ^3.0.2
     vuepress: ^1.8.2
     vuepress-plugin-one-click-copy: ^1.0.2
     vuepress-plugin-zooming: ^1.1.7
