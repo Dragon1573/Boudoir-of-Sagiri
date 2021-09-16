@@ -6850,6 +6850,13 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"lodash.chunk@npm:^4.2.0":
+  version: 4.2.0
+  resolution: "lodash.chunk@npm:4.2.0"
+  checksum: 6286c6d06814fbeda502164015c42ef53a9194e6ebaac52ec2b41e83344aefe7bc3d94fdfec525adcd2c66cefdf05dc333b6a1128e4de739797342315c17cbc7
+  languageName: node
+  linkType: hard
+
 "lodash.clonedeep@npm:^4.5.0":
   version: 4.5.0
   resolution: "lodash.clonedeep@npm:4.5.0"
@@ -6875,6 +6882,20 @@ fsevents@~2.3.2:
   version: 4.1.2
   resolution: "lodash.memoize@npm:4.1.2"
   checksum: 9ff3942feeccffa4f1fafa88d32f0d24fdc62fd15ded5a74a5f950ff5f0c6f61916157246744c620173dddf38d37095a92327d5fd3861e2063e736a5c207d089
+  languageName: node
+  linkType: hard
+
+"lodash.padstart@npm:^4.6.1":
+  version: 4.6.1
+  resolution: "lodash.padstart@npm:4.6.1"
+  checksum: 0d6ad92c626d351db85de539e41df3238d7d36c5fbfc5f57c4f060c90c73ad9f1db566463487795fdf0bf290a8f133189a0bd91d051032f6eb2d15b7e1863b5e
+  languageName: node
+  linkType: hard
+
+"lodash.sortby@npm:^4.7.0":
+  version: 4.7.0
+  resolution: "lodash.sortby@npm:4.7.0"
+  checksum: db170c9396d29d11fe9a9f25668c4993e0c1331bcb941ddbd48fb76f492e732add7f2a47cfdf8e9d740fa59ac41bbfaf931d268bc72aab3ab49e9f89354d718c
   languageName: node
   linkType: hard
 
@@ -8325,6 +8346,7 @@ fsevents@~2.3.2:
     rimraf: ^3.0.2
     vuepress: ^1.8.2
     vuepress-plugin-one-click-copy: ^1.0.2
+    vuepress-plugin-sitemap: ^2.3.1
     vuepress-plugin-zooming: ^1.1.7
     vuepress-theme-vdoing: ^1.8.3
     yamljs: ^0.3.0
@@ -9742,6 +9764,18 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"sitemap@npm:^3.0.0":
+  version: 3.2.2
+  resolution: "sitemap@npm:3.2.2"
+  dependencies:
+    lodash.chunk: ^4.2.0
+    lodash.padstart: ^4.6.1
+    whatwg-url: ^7.0.0
+    xmlbuilder: ^13.0.0
+  checksum: 005be3fdf20d184a0794b8ab0387247ae4e54699a1244d2fcaecba07f484322d5dfa4533db046d86b85221012415d7aadcbe59142bd71eada8a89312d90aea8b
+  languageName: node
+  linkType: hard
+
 "slash@npm:^1.0.0":
   version: 1.0.0
   resolution: "slash@npm:1.0.0"
@@ -10576,6 +10610,15 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"tr46@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "tr46@npm:1.0.1"
+  dependencies:
+    punycode: ^2.1.0
+  checksum: 96d4ed46bc161db75dbf9247a236ea0bfcaf5758baae6749e92afab0bc5a09cb59af21788ede7e55080f2bf02dce3e4a8f2a484cc45164e29f4b5e68f7cbcc1a
+  languageName: node
+  linkType: hard
+
 "tslib@npm:^1.9.0":
   version: 1.14.1
   resolution: "tslib@npm:1.14.1"
@@ -11129,6 +11172,21 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"vuepress-plugin-sitemap@npm:^2.3.1":
+  version: 2.3.1
+  resolution: "vuepress-plugin-sitemap@npm:2.3.1"
+  dependencies:
+    sitemap: ^3.0.0
+  peerDependencies:
+    chalk: ^2.0.0
+    commander: ^2.0.0
+    esm: ^3.0.0
+  bin:
+    vuepress-sitemap: ./cli.js
+  checksum: 92323e68853c7c695905cc28202a9ace0ca8f1ce6f3fd6162ce01f6b04fca1c8e8563c39ad8cf1bbf6e515c4a315097e0d177c5710552e5f905c15075cb18416
+  languageName: node
+  linkType: hard
+
 "vuepress-plugin-smooth-scroll@npm:^0.0.3":
   version: 0.0.3
   resolution: "vuepress-plugin-smooth-scroll@npm:0.0.3"
@@ -11232,6 +11290,13 @@ fsevents@~2.3.2:
     node-fetch: ^2.6.0
     valid-data-url: ^3.0.0
   checksum: 5b8a398dec7cf27b40ed0560bd8e4f27c80363a902fdb1558b60b5652451254e859be7b42d2566843fdf645653727d1f85bb72d92c49ae8c48ab5b28b8108d1f
+  languageName: node
+  linkType: hard
+
+"webidl-conversions@npm:^4.0.2":
+  version: 4.0.2
+  resolution: "webidl-conversions@npm:4.0.2"
+  checksum: c93d8dfe908a0140a4ae9c0ebc87a33805b416a33ee638a605b551523eec94a9632165e54632f6d57a39c5f948c4bab10e0e066525e9a4b87a79f0d04fbca374
   languageName: node
   linkType: hard
 
@@ -11421,6 +11486,17 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"whatwg-url@npm:^7.0.0":
+  version: 7.1.0
+  resolution: "whatwg-url@npm:7.1.0"
+  dependencies:
+    lodash.sortby: ^4.7.0
+    tr46: ^1.0.1
+    webidl-conversions: ^4.0.2
+  checksum: fecb07c87290b47d2ec2fb6d6ca26daad3c9e211e0e531dd7566e7ff95b5b3525a57d4f32640ad4adf057717e0c215731db842ad761e61d947e81010e05cf5fd
+  languageName: node
+  linkType: hard
+
 "when@npm:~3.6.x":
   version: 3.6.4
   resolution: "when@npm:3.6.4"
@@ -11547,6 +11623,13 @@ fsevents@~2.3.2:
   version: 4.0.0
   resolution: "xdg-basedir@npm:4.0.0"
   checksum: 0073d5b59a37224ed3a5ac0dd2ec1d36f09c49f0afd769008a6e9cd3cd666bd6317bd1c7ce2eab47e1de285a286bad11a9b038196413cd753b79770361855f3c
+  languageName: node
+  linkType: hard
+
+"xmlbuilder@npm:^13.0.0":
+  version: 13.0.2
+  resolution: "xmlbuilder@npm:13.0.2"
+  checksum: 03b316a8f6f9ab188f4b3a04a224782b8ef1f5e517773ef719a044e7267bad1c081a57bbcbfc43247d2dad168d55de54fbc62d4ed8524cadeb433a62bd8583dd
   languageName: node
   linkType: hard
 
