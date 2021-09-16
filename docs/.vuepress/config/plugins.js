@@ -32,5 +32,13 @@ module.exports = [
         return dayjs(timestamp).format('YYYY/MM/DD, HH:mm:ss')
       }
     }
+  ],
+  [
+    // 站点地图
+    'sitemap',
+    {
+      hostname: 'https://dragon1573.github.io/Plotly4py-Intro/',
+      exclude: ['/404.html']
+    }
   ]
 ]
