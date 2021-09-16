@@ -7,9 +7,9 @@ module.exports = [
         'div[class*="language-"] pre',
         'div[class*="aside-code"] aside'
       ],
-      copyMessage: '复制成功',
-      duration: 1000,
-      showInMobile: false
+      copyMessage: '白嫖成功',
+      toolTipMessage: '立即白嫖',
+      duration: 750
     }
   ],
   [
