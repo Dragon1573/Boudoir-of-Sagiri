@@ -28,7 +28,7 @@ jobs:
           path: |
             **/node_modules
             **/.yarn/cache
-          key: yarn-${{ hashFiles('**/lockfiles') }}
+          key: yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: yarn-
 
       - name: Install dependencies
