@@ -5,11 +5,15 @@ const themeConfig = require('./config/themeConfig.js');
 module.exports = {
   theme: 'vdoing',
 
-  lang: 'zh-CN',
-  title: "Plotly.py 入门教程",
-  description: '跟着我一起学习 Plotly ，享受它强大的数据可视化能力吧～',
   base: '/Plotly4py-Intro/',
   dest: 'dist',
+  locales: {
+    '/': {
+      title: "Plotly.py 入门教程",
+      description: '跟着我一起学习 Plotly ，享受它强大的数据可视化能力吧～',
+      lang: 'zh-CN'
+    }
+  },
 
   head,
   plugins,
