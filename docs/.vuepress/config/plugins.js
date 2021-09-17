@@ -9,7 +9,7 @@ module.exports = [
       ],
       copyMessage: '白嫖成功',
       toolTipMessage: '立即白嫖',
-      duration: 750
+      duration: 1250
     }
   ],
   [
