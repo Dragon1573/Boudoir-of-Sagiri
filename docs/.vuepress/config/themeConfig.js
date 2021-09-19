@@ -56,6 +56,6 @@ module.exports = {
   footer: {
     createYear: 2021,
     copyrightInfo:
-      'Dragon1573 | <a href="https://github.com/Dragon1573/Plotly4py-Intro/blob/master/LICENSE.txt">CC-BY-SA 4.0</a>',
+      'Dragon1573 | <a href="https://github.com/Dragon1573/Plotly4py-Intro/blob/main/LICENSE.txt">CC-BY-SA 4.0</a>',
   }
 }
