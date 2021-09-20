@@ -43,5 +43,9 @@ jobs:
         with:
           target_branch: gh-pages
           build_dir: ./dist
+          # 关闭 Jekyll in GitHub
+          jekyll: false
+          # 展示详细日志
+          verbose: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
