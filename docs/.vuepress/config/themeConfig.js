@@ -37,11 +37,6 @@ module.exports = {
         link: 'https://github.com/Dragon1573',
       },
       {
-        iconClass: 'icon-zhihu',
-        title: '知乎',
-        link: 'https://www.zhihu.com/people/asteria-52-5'
-      },
-      {
         iconClass: 'icon-csdn',
         title: 'CSDN',
         link: 'https://blog.csdn.net/u011367208'
@@ -50,6 +45,21 @@ module.exports = {
         iconClass: 'icon-bilibili',
         title: 'B站',
         link: 'https://space.bilibili.com/289561900'
+      },
+      {
+        iconClass: 'icon-youtube',
+        title: 'YouTube',
+        link: 'https://www.youtube.com/channel/UCS36ZpuvN2Hp6tO1mcBgTig'
+      },
+      {
+        iconClass: 'icon-zhihu',
+        title: '知乎',
+        link: 'https://www.zhihu.com/people/asteria-52-5'
+      },
+      {
+        iconClass: 'icon-erji',
+        title: 'QQ音乐',
+        link: 'https://y.qq.com/n/ryqq/profile/like/song?uin=owc5NKSAoK6A'
       }
     ]
   },
