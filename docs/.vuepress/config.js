@@ -25,5 +25,6 @@ module.exports = {
   extendMarkdown: md => {
     md.set({ breaks: true });
     md.use(require('markdown-it-mathjax3'));
+    md.use(require('markdown-it-footnote'));
   }
 }
