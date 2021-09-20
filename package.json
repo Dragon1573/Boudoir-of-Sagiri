@@ -17,13 +17,14 @@
     "rimraf": "^3.0.2",
     "vuepress": "^1.8.2",
     "vuepress-plugin-one-click-copy": "^1.0.2",
+    "vuepress-plugin-sitemap": "^2.3.1",
     "vuepress-plugin-zooming": "^1.1.7",
     "vuepress-theme-vdoing": "^1.8.3",
     "yamljs": "^0.3.0"
   },
   "dependencies": {
-    "markdown-it-mathjax3": "^3.0.0-0",
-    "vuepress-plugin-sitemap": "^2.3.1"
+    "markdown-it-footnote": "^3.0.3",
+    "markdown-it-mathjax3": "^3.0.0-0"
   },
   "packageManager": "yarn@3.0.2"
 }
