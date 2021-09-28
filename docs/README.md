@@ -4,13 +4,15 @@ author:
   link: https://github.com/Dragon1573
 bannerBg: none
 features:
-  - title: 前端
-    imgUrl: /assets/img/front.png
-  - title: 后端
-    imgUrl: /assets/img/back.png
-    link: /backend/
+  - title: 机器学习
+    imgUrl: /assets/img/AI.svg
+    link: /ml/
+  - title: 数据可视化
+    imgUrl: /assets/img/visualization.svg
+    link: /visualization/
   - title: 技术杂谈
-    imgUrl: /assets/img/others.png
+    imgUrl: /assets/img/skill.svg
+    link: /skill/
 heroText: ベ断桥烟雨ミの学习笔记
 home: true
 postList: none
