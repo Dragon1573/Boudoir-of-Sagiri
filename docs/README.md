@@ -12,7 +12,7 @@ features:
     link: /visualization/
   - title: 技术杂谈
     imgUrl: /assets/img/skill.svg
-    link: /skill/
+    link: /skills/
 heroText: ベ断桥烟雨ミの学习笔记
 home: true
 postList: none
