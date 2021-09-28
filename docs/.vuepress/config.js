@@ -9,8 +9,8 @@ module.exports = {
   dest: 'dist',
   locales: {
     '/': {
-      title: "Plotly.py 入门教程",
-      description: '跟着我一起学习 Plotly ，享受它强大的数据可视化能力吧～',
+      title: "ベ断桥烟雨ミの学习笔记",
+      description: '学习爱我，我爱学习～',
       lang: 'zh-CN'
     }
   },
