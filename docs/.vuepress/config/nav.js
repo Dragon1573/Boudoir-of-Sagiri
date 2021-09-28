@@ -1,19 +1,12 @@
 // nav
 module.exports = [
   { text: '首页', link: '/' },
-  { text: '前端', link: '/frontend/' },
+  { text: '机器学习', link: '/ml/' },
   {
-    text: '后端',
-    link: '/backend/',
+    text: '数据可视化',
+    link: '/visualization/',
     items: [
-      { text: '机器学习', link: '/backend/ml/' },
-      {
-        text: '数据可视化',
-        link: '/backend/visualization/',
-        items: [
-          { text: 'Plotly', link: '/backend/visualization/plotly/getting-started.html' }
-        ]
-      }
+      { text: 'Plotly', link: '/visualization/plotly/' }
     ]
   },
   { text: '技术杂谈', link: '/skills/' }
