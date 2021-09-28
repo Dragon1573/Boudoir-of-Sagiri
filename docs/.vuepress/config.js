@@ -5,7 +5,7 @@ const themeConfig = require('./config/themeConfig.js');
 module.exports = {
   theme: 'vdoing',
 
-  base: '/Plotly4py-Intro/',
+  base: '/',
   dest: 'dist',
   locales: {
     '/': {
