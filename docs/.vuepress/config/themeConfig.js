@@ -5,7 +5,7 @@ module.exports = {
   logo: '/favicon.png',
   nav,
   sidebarDepth: 2,
-  repo: 'Dragon1573/Plotly4py-Intro',
+  repo: 'Dragon1573/Study-Notes',
   searchMaxSuggestions: 10,
   lastUpdated: '上次更新',
   docsDir: 'docs',
@@ -66,6 +66,6 @@ module.exports = {
   footer: {
     createYear: 2021,
     copyrightInfo:
-      'Dragon1573 | <a href="https://github.com/Dragon1573/Plotly4py-Intro/blob/main/LICENSE.txt">CC-BY-SA 4.0</a>',
+      'Dragon1573 | <a href="https://github.com/Dragon1573/Study-Notes/blob/main/LICENSE.txt">CC-BY-SA 4.0</a>',
   }
 }
