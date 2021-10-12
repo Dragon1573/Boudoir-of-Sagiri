@@ -9,5 +9,5 @@ module.exports = [
       { text: 'Plotly', link: '/visualization/plotly/' }
     ]
   },
-  { text: '技术杂谈', link: '/skills/' }
+  { text: '技术杂谈', link: '/skill/' }
 ]
