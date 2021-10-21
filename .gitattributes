@@ -1,3 +1,5 @@
 # 有些特殊的 JavaScript 模块文件体型庞大，需要将其作为二进制文件整体处理
 # 这样可以阻止 SourceTree 进行文件变更预览
-*.cjs   -text
+*.cjs               binary
+/.yarn/releases/**  binary
+/.yarn/plugins/**   binary
