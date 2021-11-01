@@ -12,7 +12,7 @@
 
 ## 介绍
 
-这是一个使用 *VuePress* 编译构建、应用了 ** 主题样式、托管于 [*GitHub Pages*](https://pages.github.com/) 之上的知识库。这个知识库包含了以 *Python* 为主的各类知识型文档，涵盖了数据可视化、机器学习和其他开发技巧。
+这是一个使用 *VuePress* 编译构建、应用了 *Vdoing* 主题样式、托管于 [*GitHub Pages*](https://pages.github.com/) 之上的知识库。这个知识库包含了以 *Python* 为主的各类知识型文档，涵盖了数据可视化、机器学习和其他开发技巧。
 
 ## 一起看看？
 
