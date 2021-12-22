@@ -52,11 +52,6 @@ module.exports = {
         link: 'https://www.youtube.com/channel/UCS36ZpuvN2Hp6tO1mcBgTig'
       },
       {
-        iconClass: 'icon-zhihu',
-        title: '知乎',
-        link: 'https://www.zhihu.com/people/asteria-52-5'
-      },
-      {
         iconClass: 'icon-erji',
         title: 'QQ音乐',
         link: 'https://y.qq.com/n/ryqq/profile/like/song?uin=owc5NKSAoK6A'
