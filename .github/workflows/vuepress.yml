@@ -17,13 +17,16 @@ jobs:
       - uses: actions/checkout@v2
         with:
           submodules: true
+          # 获取完整 Git 历史记录（默认将所有日志压缩到最近一次提交中）
           fetch-depth: 0
 
       - uses: actions/setup-node@v2
         with:
+          # 本项目使用的是 Nodejs v16
           node-version: "16"
 
       - uses: actions/cache@v2
+        # 缓存本项目的 Yarn 依赖项，加速编译构建
         id: yarn-cache
         with:
           path: |
@@ -33,15 +36,20 @@ jobs:
           restore-keys: yarn-
 
       - name: Install dependencies
+        # 当 Yarn 依赖配置更新后，刷新依赖项
         if: steps.yarn-cache.outputs.cache-hit != 'true'
         run: yarn install
 
       - name: Build site
+        # 使用 Yarn 执行项目构建
         run: yarn build
 
       - uses: crazy-max/ghaction-github-pages@v2
+        # 将构建产物部署到 GitHub Pages
         with:
+          # 目标分支
           target_branch: gh-pages
+          # 构建产物来源目录
           build_dir: ./dist
           # 关闭 Jekyll in GitHub
           jekyll: false
@@ -49,3 +57,13 @@ jobs:
           verbose: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: Mattraks/delete-workflow-runs@main
+        # 移除以前的所有 Workflows 运行记录
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          repository: ${{ github.repository }}
+          # 仅保留最近7天的日志
+          retain_days: 7
+          # 仅保留最近4次的日志
+          keep_minimum_runs: 4
