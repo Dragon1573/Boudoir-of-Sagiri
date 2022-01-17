@@ -7624,13 +7624,13 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"markdown-it-mathjax3@npm:^3.1.1":
-  version: 3.1.1
-  resolution: "markdown-it-mathjax3@npm:3.1.1"
+"markdown-it-mathjax3@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "markdown-it-mathjax3@npm:4.0.0"
   dependencies:
     juice: ^8.0.0
     mathjax-full: ^3.2.0
-  checksum: e75b8c1bd956b7550ef6990e58a5b5e4e0f31e1ac34bac33a76622ea64c01c908335a3aaac5d2f2fe6c8fbd9044f69ba0f5c148793d2bded3e3c2fba7e732780
+  checksum: eca3372f9dd1ed3133bffa145d986c9f683cdf838e7a9a7d2b56d61a51325eb58f99648973096210eeaa68f6b22dc0b7e331518d748a82bf178455e2b8f3d46c
   languageName: node
   linkType: hard
 
@@ -10850,7 +10850,7 @@ fsevents@~2.3.2:
     inquirer: ^8.2.0
     json2yaml: ^1.1.0
     markdown-it-footnote: ^3.0.3
-    markdown-it-mathjax3: ^3.1.1
+    markdown-it-mathjax3: ^4.0.0
     rimraf: ^3.0.2
     vuepress: ^1.9.5
     vuepress-plugin-one-click-copy: ^1.0.6
