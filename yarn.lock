@@ -10857,7 +10857,7 @@ __metadata:
     vuepress-plugin-one-click-copy: ^1.0.6
     vuepress-plugin-sitemap: ^2.3.1
     vuepress-plugin-zooming: ^1.1.8
-    vuepress-theme-vdoing: ^1.9.4
+    vuepress-theme-vdoing: ^1.9.5
     yamljs: ^0.3.0
   languageName: unknown
   linkType: soft
@@ -11794,9 +11794,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vuepress-theme-vdoing@npm:^1.9.4":
-  version: 1.9.4
-  resolution: "vuepress-theme-vdoing@npm:1.9.4"
+"vuepress-theme-vdoing@npm:^1.9.5":
+  version: 1.9.5
+  resolution: "vuepress-theme-vdoing@npm:1.9.5"
   dependencies:
     "@better-scroll/core": ^2.0.0-beta.6
     "@better-scroll/slide": ^2.0.0-beta.6
@@ -11813,7 +11813,7 @@ __metadata:
     stylus-loader: ^3.0.2
     vuepress-plugin-container: ^2.0.2
     vuepress-plugin-smooth-scroll: ^0.0.3
-  checksum: ef544cf9dd8f3054bd13ec4ea66eb544eb73ead837b983e94314c2a26a0f99e92294bd90d1566b5ab895ff25b7f51c9052bb15d43287773a12b15515492dda58
+  checksum: 4d493493fb1acb8f994f425235c68ca5c4e016a033d830547b9ebccf848696ac2f49b810a5ce43da575d71176cc975e01cec8ee939a6e7dc475c3ad7a305fdd5
   languageName: node
   linkType: hard
 
