@@ -37,7 +37,7 @@ module.exports = [
     // 站点地图
     'sitemap',
     {
-      hostname: 'https://dragon1573.github.io/Plotly4py-Intro/',
+      hostname: 'https://blog.dragon1573.wang/',
       exclude: ['/404.html']
     }
   ]
