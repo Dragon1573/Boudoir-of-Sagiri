@@ -4236,10 +4236,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dayjs@npm:^1.10.8":
-  version: 1.10.8
-  resolution: "dayjs@npm:1.10.8"
-  checksum: 5a6b358a0646a780b7dbbec07b8c4400425143f88bf127f456bd2e75a854046f54808d65da2bf964c8267b82dbde0530e990376757ce7d961349d9cde8716a1d
+"dayjs@npm:^1.11.0":
+  version: 1.11.0
+  resolution: "dayjs@npm:1.11.0"
+  checksum: 2d36f6d71345114cdcd89147adf9e05b4f8fe81684e08c8bf1f86b140aa0b86ecc3cae661a9348d96feb7fbefd03e1bc3697303688e95209670abcb36b4ece15
   languageName: node
   linkType: hard
 
@@ -10856,7 +10856,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "study-notes@workspace:."
   dependencies:
-    dayjs: ^1.10.8
+    dayjs: ^1.11.0
     inquirer: ^8.2.1
     json2yaml: ^1.1.0
     markdown-it-footnote: ^3.0.3
@@ -10866,7 +10866,7 @@ __metadata:
     vuepress-plugin-one-click-copy: ^1.0.6
     vuepress-plugin-sitemap: ^2.3.1
     vuepress-plugin-zooming: ^1.1.8
-    vuepress-theme-vdoing: ^1.9.5
+    vuepress-theme-vdoing: ^1.10.0
     yamljs: ^0.3.0
   languageName: unknown
   linkType: soft
@@ -11803,9 +11803,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vuepress-theme-vdoing@npm:^1.9.5":
-  version: 1.9.5
-  resolution: "vuepress-theme-vdoing@npm:1.9.5"
+"vuepress-theme-vdoing@npm:^1.10.0":
+  version: 1.10.0
+  resolution: "vuepress-theme-vdoing@npm:1.10.0"
   dependencies:
     "@better-scroll/core": ^2.0.0-beta.6
     "@better-scroll/slide": ^2.0.0-beta.6
@@ -11822,7 +11822,7 @@ __metadata:
     stylus-loader: ^3.0.2
     vuepress-plugin-container: ^2.0.2
     vuepress-plugin-smooth-scroll: ^0.0.3
-  checksum: 4d493493fb1acb8f994f425235c68ca5c4e016a033d830547b9ebccf848696ac2f49b810a5ce43da575d71176cc975e01cec8ee939a6e7dc475c3ad7a305fdd5
+  checksum: 48a8838e3c572dfda3a05fbeb488c17ca8e73924bbd87389850d89b6e63546f6376dc2e06210385744fc4f2d86cf5603950b545ca4345326a38fd5c54db384ec
   languageName: node
   linkType: hard
 

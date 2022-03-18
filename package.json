@@ -11,7 +11,7 @@
   },
   "license": "CC-BY-SA-4.0",
   "devDependencies": {
-    "dayjs": "^1.10.8",
+    "dayjs": "^1.11.0",
     "inquirer": "^8.2.1",
     "json2yaml": "^1.1.0",
     "markdown-it-footnote": "^3.0.3",
@@ -21,7 +21,7 @@
     "vuepress-plugin-one-click-copy": "^1.0.6",
     "vuepress-plugin-sitemap": "^2.3.1",
     "vuepress-plugin-zooming": "^1.1.8",
-    "vuepress-theme-vdoing": "^1.9.5",
+    "vuepress-theme-vdoing": "^1.10.0",
     "yamljs": "^0.3.0"
   },
   "dependencies": {
