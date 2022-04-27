@@ -2417,7 +2417,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ansi-styles@npm:^4.1.0":
+"ansi-styles@npm:^4.0.0, ansi-styles@npm:^4.1.0":
   version: 4.3.0
   resolution: "ansi-styles@npm:4.3.0"
   dependencies:
@@ -6503,9 +6503,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"inquirer@npm:^8.2.2":
-  version: 8.2.2
-  resolution: "inquirer@npm:8.2.2"
+"inquirer@npm:^8.2.3":
+  version: 8.2.3
+  resolution: "inquirer@npm:8.2.3"
   dependencies:
     ansi-escapes: ^4.2.1
     chalk: ^4.1.1
@@ -6521,7 +6521,8 @@ __metadata:
     string-width: ^4.1.0
     strip-ansi: ^6.0.0
     through: ^2.3.6
-  checksum: 69a2cf32f51af0e94dd66c597fdca42b890ff521b537dbfe1fd532c19a751d54893b7896523691ec30357f6212a80a2417fec7bf34411f369bbf151bdbc95ae9
+    wrap-ansi: ^7.0.0
+  checksum: 5ad4910940e8d9f8fb62e9f340c210aeadd2159e6eb56819a6b23ad25f1677590399d05a8e15a5a6b2da3fbad095aaf7e16c9d08a3d917e026c37eb1a95620d8
   languageName: node
   linkType: hard
 
@@ -10857,7 +10858,7 @@ __metadata:
   resolution: "study-notes@workspace:."
   dependencies:
     dayjs: ^1.11.1
-    inquirer: ^8.2.2
+    inquirer: ^8.2.3
     json2yaml: ^1.1.0
     markdown-it-footnote: ^3.0.3
     markdown-it-mathjax3: ^4.3.1
@@ -12213,6 +12214,17 @@ __metadata:
     string-width: ^3.0.0
     strip-ansi: ^5.0.0
   checksum: 9b48c862220e541eb0daa22661b38b947973fc57054e91be5b0f2dcc77741a6875ccab4ebe970a394b4682c8dfc17e888266a105fb8b0a9b23c19245e781ceae
+  languageName: node
+  linkType: hard
+
+"wrap-ansi@npm:^7.0.0":
+  version: 7.0.0
+  resolution: "wrap-ansi@npm:7.0.0"
+  dependencies:
+    ansi-styles: ^4.0.0
+    string-width: ^4.1.0
+    strip-ansi: ^6.0.0
+  checksum: a790b846fd4505de962ba728a21aaeda189b8ee1c7568ca5e817d85930e06ef8d1689d49dbf0e881e8ef84436af3a88bc49115c2e2788d841ff1b8b5b51a608b
   languageName: node
   linkType: hard
 
