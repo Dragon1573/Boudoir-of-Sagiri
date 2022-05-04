@@ -6503,9 +6503,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"inquirer@npm:^8.2.3":
-  version: 8.2.3
-  resolution: "inquirer@npm:8.2.3"
+"inquirer@npm:^8.2.4":
+  version: 8.2.4
+  resolution: "inquirer@npm:8.2.4"
   dependencies:
     ansi-escapes: ^4.2.1
     chalk: ^4.1.1
@@ -6522,7 +6522,7 @@ __metadata:
     strip-ansi: ^6.0.0
     through: ^2.3.6
     wrap-ansi: ^7.0.0
-  checksum: 5ad4910940e8d9f8fb62e9f340c210aeadd2159e6eb56819a6b23ad25f1677590399d05a8e15a5a6b2da3fbad095aaf7e16c9d08a3d917e026c37eb1a95620d8
+  checksum: dfcb6529d3af443dfea2241cb471508091b51f5121a088fdb8728b23ec9b349ef0a5e13a0ef2c8e19457b0bed22f7cbbcd561f7a4529d084c562a58c605e2655
   languageName: node
   linkType: hard
 
@@ -10858,7 +10858,7 @@ __metadata:
   resolution: "study-notes@workspace:."
   dependencies:
     dayjs: ^1.11.1
-    inquirer: ^8.2.3
+    inquirer: ^8.2.4
     json2yaml: ^1.1.0
     markdown-it-footnote: ^3.0.3
     markdown-it-mathjax3: ^4.3.1
@@ -10867,7 +10867,7 @@ __metadata:
     vuepress-plugin-one-click-copy: ^1.0.6
     vuepress-plugin-sitemap: ^2.3.1
     vuepress-plugin-zooming: ^1.1.8
-    vuepress-theme-vdoing: ^1.11.2
+    vuepress-theme-vdoing: ^1.11.3
     yamljs: ^0.3.0
   languageName: unknown
   linkType: soft
@@ -11804,9 +11804,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vuepress-theme-vdoing@npm:^1.11.2":
-  version: 1.11.2
-  resolution: "vuepress-theme-vdoing@npm:1.11.2"
+"vuepress-theme-vdoing@npm:^1.11.3":
+  version: 1.11.3
+  resolution: "vuepress-theme-vdoing@npm:1.11.3"
   dependencies:
     "@better-scroll/core": ^2.0.0-beta.6
     "@better-scroll/slide": ^2.0.0-beta.6
@@ -11823,7 +11823,7 @@ __metadata:
     stylus-loader: ^3.0.2
     vuepress-plugin-container: ^2.0.2
     vuepress-plugin-smooth-scroll: ^0.0.3
-  checksum: 7f7085968432714c7a2ab4409a692f2c37cb6a2d09f6bdcec02dbfad865d9ad36e29759907b2faeaa9822a1742cd4757669d6950ef04584f7ce7df4dee691787
+  checksum: d884d413c9f62088236251bab5f64eeb57e2863f8fce903192dd0496b41cd9773eb33e56f275365b37b3eacbea33df86b8288d6ab51775afc9708c8fde347a00
   languageName: node
   linkType: hard
 
