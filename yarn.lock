@@ -4236,10 +4236,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dayjs@npm:^1.11.2":
-  version: 1.11.2
-  resolution: "dayjs@npm:1.11.2"
-  checksum: 78f8bd04a9e5f5554aa06eacda65a7d59e162d39f621a46fd34fb3b51367c3662426d86b4e2f4ac535f81e0c4d5af3e8a83b37e672412eb556267d726c61f8f3
+"dayjs@npm:^1.11.3":
+  version: 1.11.3
+  resolution: "dayjs@npm:1.11.3"
+  checksum: c87e06b562a51ae6568cc5b840c7579d82a0f8af7163128c858fe512d3d71d07bd8e8e464b8cc41b8698a9e26b80ab2c082d14a1cd4c33df5692d77ccdfc5a43
   languageName: node
   linkType: hard
 
@@ -10857,7 +10857,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "study-notes@workspace:."
   dependencies:
-    dayjs: ^1.11.2
+    dayjs: ^1.11.3
     inquirer: ^8.2.4
     json2yaml: ^1.1.0
     markdown-it-footnote: ^3.0.3
