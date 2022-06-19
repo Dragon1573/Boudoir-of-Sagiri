@@ -12,7 +12,7 @@
   "license": "CC-BY-SA-4.0",
   "devDependencies": {
     "dayjs": "^1.11.3",
-    "inquirer": "^8.2.4",
+    "inquirer": "^9.0.0",
     "json2yaml": "^1.1.0",
     "markdown-it-footnote": "^3.0.3",
     "markdown-it-mathjax3": "^4.3.1",
