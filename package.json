@@ -28,5 +28,5 @@
     "markdown-it-footnote": "^3.0.3",
     "markdown-it-mathjax3": "^4.3.1"
   },
-  "packageManager": "yarn@3.2.2"
+  "packageManager": "yarn@3.2.3"
 }
