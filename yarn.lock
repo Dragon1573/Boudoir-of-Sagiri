@@ -1927,6 +1927,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vuepress/plugin-google-analytics@npm:^1.9.7":
+  version: 1.9.7
+  resolution: "@vuepress/plugin-google-analytics@npm:1.9.7"
+  dependencies:
+    "@vuepress/types": 1.9.7
+  checksum: 6168e72cbc33d74e41d6b924bb92d1820927eb1d5db562b2939b728177e075d0993010f909a08f349aaed60744f8d05be15f58d691ada78d28d8891b3bf4ece5
+  languageName: node
+  linkType: hard
+
 "@vuepress/plugin-last-updated@npm:1.9.7":
   version: 1.9.7
   resolution: "@vuepress/plugin-last-updated@npm:1.9.7"
@@ -10938,6 +10947,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "study-notes@workspace:."
   dependencies:
+    "@vuepress/plugin-google-analytics": ^1.9.7
     dayjs: ^1.11.5
     inquirer: ^9.1.1
     json2yaml: ^1.1.0

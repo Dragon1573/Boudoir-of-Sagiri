@@ -40,5 +40,12 @@ module.exports = [
       hostname: 'https://blog.dragon1573.wang/',
       exclude: ['/404.html']
     }
+  ],
+  [
+    // Google Analytics 服务
+    '@vuepress/google-analytics',
+    {
+      'ga': 'G-VWR5JJ7W9P'
+    }
   ]
 ]
