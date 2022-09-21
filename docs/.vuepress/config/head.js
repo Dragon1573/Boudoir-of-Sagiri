@@ -10,5 +10,13 @@ module.exports = [
   ['meta', {
     name: 'viewport',
     content: 'width=device-width, initial-scale=1'
-  }]
+  }],
+  ['script', { src: 'https://www.googletagmanager.com/gtag/js?id=G-VWR5JJ7W9P' }],
+  ['script', {}, `
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-VWR5JJ7W9P');
+  `]
 ]
