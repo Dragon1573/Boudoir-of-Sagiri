@@ -12,7 +12,7 @@ module.exports = [
     content: 'width=device-width, initial-scale=1'
   }],
   ['script', {
-    async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-VWR5JJ7W9P'
+    async: 'async', src: 'https://www.googletagmanager.com/gtag/js?id=G-VWR5JJ7W9P'
   }],
   ['script', {}, `
     window.dataLayer = window.dataLayer || [];
