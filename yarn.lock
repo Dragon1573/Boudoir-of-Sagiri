@@ -7856,13 +7856,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"markdown-it-mathjax3@npm:^4.3.1":
-  version: 4.3.1
-  resolution: "markdown-it-mathjax3@npm:4.3.1"
+"markdown-it-mathjax3@npm:^4.3.2":
+  version: 4.3.2
+  resolution: "markdown-it-mathjax3@npm:4.3.2"
   dependencies:
     juice: ^8.0.0
     mathjax-full: ^3.2.0
-  checksum: bd352969e75aafd2a3c24a8f36a2bfc2425c8722520c570fde3852b1e4147db545c6524f0780e0d7d358f480a44ea762ebc7e5a947f384b189e098a563b9560a
+  checksum: 3a9efe24ef823ff65a753d9236d2d6ef9302502cff8473f812c5fa0ac572bc9044b15afef9bd1a109d4b82981a21d92e2ec47f23149244e788410d3ae11c2549
   languageName: node
   linkType: hard
 
@@ -11126,7 +11126,7 @@ __metadata:
     inquirer: ^9.1.2
     json2yaml: ^1.1.0
     markdown-it-footnote: ^3.0.3
-    markdown-it-mathjax3: ^4.3.1
+    markdown-it-mathjax3: ^4.3.2
     rimraf: ^3.0.2
     vuepress: ^1.9.7
     vuepress-plugin-one-click-copy: ^1.0.6

@@ -16,7 +16,7 @@
     "inquirer": "^9.1.2",
     "json2yaml": "^1.1.0",
     "markdown-it-footnote": "^3.0.3",
-    "markdown-it-mathjax3": "^4.3.1",
+    "markdown-it-mathjax3": "^4.3.2",
     "rimraf": "^3.0.2",
     "vuepress": "^1.9.7",
     "vuepress-plugin-one-click-copy": "^1.0.6",
@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "markdown-it-footnote": "^3.0.3",
-    "markdown-it-mathjax3": "^4.3.1"
+    "markdown-it-mathjax3": "^4.3.2"
   },
   "packageManager": "yarn@3.2.3"
 }
