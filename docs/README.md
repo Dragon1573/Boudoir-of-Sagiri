@@ -7,9 +7,6 @@ features:
   - title: 机器学习
     imgUrl: /assets/img/AI.svg
     link: /ml/
-  - title: 数据可视化
-    imgUrl: /assets/img/visualization.svg
-    link: /visualization/
   - title: 技术杂谈
     imgUrl: /assets/img/skill.svg
     link: /skill/
