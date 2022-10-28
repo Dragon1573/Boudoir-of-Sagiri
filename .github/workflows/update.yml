@@ -42,6 +42,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           message: 'Update dependencies'
+          branch: ${{ github.ref_name }}
 
       - name: Delete stale workflows
         uses: Mattraks/delete-workflow-runs@main
