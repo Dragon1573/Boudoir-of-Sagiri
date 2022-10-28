@@ -2,8 +2,10 @@ name: Publish Pages
 
 on:
   push:
-    branches:
-      - main
+    branches-ignore:
+      # 忽略 GitHub Pages 分支
+      # 其他分支的提交均触发此工作流
+      - gh-pages
 
 env:
   # 配置时区（用于 Git 生成时间戳）
