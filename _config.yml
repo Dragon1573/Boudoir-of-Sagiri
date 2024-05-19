@@ -17,9 +17,9 @@ email: Legend_1949@126.com
 # 网址（https://hexo.io/zh-cn/docs/configuration#%E7%BD%91%E5%9D%80）
 ## 如果您的网站存放在子目录中，例如 http://example.com/blog，则：
 # 请将您的 url 设为 http://example.com/blog
-url: https://dragon1573.github.io/hexo-blog-butterfly
+url: https://dragon1573.github.io/hexo-blog
 # 并把 root 设为 /blog/
-root: /hexo-blog-butterfly/
+root: /hexo-blog/
 permalink: :title/
 permalink_defaults:
 pretty_urls:
