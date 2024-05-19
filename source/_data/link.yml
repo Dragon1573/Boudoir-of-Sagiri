@@ -1,0 +1,10 @@
+- class_name: 友情链接
+  link_list:
+    - name: Qlittle
+      link: https://qlittlo.github.io/
+      avatar: https://raw.githubusercontent.com/Qlittlo/picbed/main/avatar/touxiang.webp
+      descr: 一个笔记Blog
+    - name: Pinpe 的云端
+      link: https://pinpe.top/
+      avatar: https://pinpe.top/head.jpg
+      descr: 这里是 Pinpe 的云端
