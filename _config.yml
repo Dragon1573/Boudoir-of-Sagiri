@@ -1,0 +1,157 @@
+# Hexo Configuration
+## Docs: https://hexo.io/zh-cn/docs/configuration
+## Source: https://github.com/hexojs/hexo/
+
+# 网站（https://hexo.io/zh-cn/docs/configuration#%E7%BD%91%E7%AB%99）
+title: 纱雾の闺房
+subtitle: "不可进入の房间"
+description: "一个装满了涩涩（雾）知识的站点"
+keywords:
+  - Hexo
+  - Knowledge
+author: Dragon1573
+language: zh-CN
+timezone: "Asia/Hong_Kong"
+email: Legend_1949@126.com
+
+# 网址（https://hexo.io/zh-cn/docs/configuration#%E7%BD%91%E5%9D%80）
+## 如果您的网站存放在子目录中，例如 http://example.com/blog，则：
+# 请将您的 url 设为 http://example.com/blog
+url: https://dragon1573.github.io/hexo-blog-butterfly
+# 并把 root 设为 /blog/
+root: /hexo-blog-butterfly/
+permalink: :title/
+permalink_defaults:
+pretty_urls:
+  trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: false # Set to false to remove trailing '.html' from permalinks
+
+# 目录（https://hexo.io/zh-cn/docs/configuration#%E7%9B%AE%E5%BD%95）
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# 文章（https://hexo.io/zh-cn/docs/configuration#%E6%96%87%E7%AB%A0）
+new_post_name: :title.md
+default_layout: post
+auto_spacing: true
+titlecase: false
+external_link:
+  enable: true
+  field: site
+  exclude: ""
+filename_case: 1
+render_drafts: false
+post_asset_folder: true # 资源文件夹（https://hexo.io/zh-cn/docs/asset-folders#%E6%96%87%E7%AB%A0%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9）
+relative_link: false
+future: false
+syntax_highlighter: prismjs # 代码块 > 代码高亮（https://hexo.io/zh-cn/docs/syntax-highlight）
+highlight: # 代码块 > 代码高亮（https://hexo.io/zh-cn/docs/syntax-highlight#Highlight-js）
+  line_number: true
+  auto_detect: true
+  tab_replace: "    "
+  wrap: false
+  hljs: false
+prismjs: # 代码块 > 代码高亮（https://hexo.io/zh-cn/docs/syntax-highlight#PrismJS）
+  preprocess: true
+  line_number: true
+  tab_replace: "    "
+
+# Homepage Configuration
+index_generator:
+  # path: Root path for your blogs index page. (default = '')
+  path: ""
+  # per_page: Posts displayed per page. (0 = disable pagination)
+  per_page: 5
+  # order_by: Posts order. (Order by date descending by default)
+  order_by: -date
+
+# 分类 & 标签（https://hexo.io/zh-cn/docs/configuration#%E5%88%86%E7%B1%BB-%E6%A0%87%E7%AD%BE）
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Metadata elements
+## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+meta_generator: true
+
+# 日期 / 时间格式
+## Hexo 使用 Moment.js 来解析和显示时间。
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+## 当 Front Matter 中没有指定 updated 时，updated 如何取值：
+## - mtime: 使用文件的最后修改时间。这是从 Hexo 3.0.0 开始的默认行为。
+## - date: 使用 date 作为 updated 的值。可被用于 Git 工作流之中，因为使用 Git 管理站点时，文件的最后修改日期常常会发生改变
+## - empty: 直接删除 updated。使用这一选项可能会导致大部分主题和插件无法正常工作。
+updated_option: "date"
+
+# 分页（https://hexo.io/zh-cn/docs/configuration#%E5%88%86%E9%A1%B5）
+per_page: 5
+pagination_dir: page
+
+# 扩展（https://hexo.io/zh-cn/docs/configuration#%E6%89%A9%E5%B1%95）
+## 插件: https://hexo.io/plugins/
+## 主题: https://hexo.io/themes/
+theme: butterfly
+
+## 包括或不包括目录和文件
+## （https://hexo.io/zh-cn/docs/configuration#%E5%8C%85%E6%8B%AC%E6%88%96%E4%B8%8D%E5%8C%85%E6%8B%AC%E7%9B%AE%E5%BD%95%E5%92%8C%E6%96%87%E4%BB%B6）
+include: []
+exclude: []
+ignore: []
+
+## Kramed 插件配置
+kramed:
+  gfm: true
+  pedantic: false
+  sanitize: false
+  tables: true
+  breaks: true
+  smartLists: true
+  smartypants: true
+
+## 搜索配置
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
+
+## RSS源插件配置
+feed:
+  enable: true
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: " "
+  order_by: -date
+  icon: icon.png
+  autodiscovery: true
+  template:
+
+## SEO/外链流失防护插件
+nofollow:
+  enable: true
+  field: site
+  exclude: []
+
+## 站点地图插件
+sitemap:
+  path:
+    - sitemap.xml
+    - sitemap.txt
+  # template: ./sitemap_template.xml
+  # template_txt: ./sitemap_template.txt
+  rel: false
+  tags: true
+  categories: true
