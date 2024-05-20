@@ -1,0 +1,55 @@
+name: Hexo 站点发布
+
+on:
+  push:
+    branches:
+      - butterfly
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Hexo 站点发布
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+
+    steps:
+      - uses: actions/checkout@v4
+        name: 检出仓库
+        with:
+          # 我们需要完整历史记录，让 Hexo 能够显示每一篇文章的正确编写时间
+          fetch-depth: 0
+          # 我们用了 Git Submodules 功能引入主题，所以需要这个
+          submodules: true
+      - uses: threeal/setup-yarn-action@v2
+        name: 配置 Nodejs 环境
+        with:
+          version: latest
+          cache: true
+      # 上面这个 step 并不会缓存 node_modules 目录
+      # 所以下面的这个 step 是必要的
+      - name: 配置 Yarn
+        run: yarn config set nodeLinker node-modules
+      - name: 安装必要依赖项
+        run: yarn install --immutable
+      - name: 执行编译构建
+        run: yarn run build
+      - name: 设置 GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: 上传构件
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+      - name: 发布站点
+        id: deploy
+        uses: actions/deploy-pages@v4
