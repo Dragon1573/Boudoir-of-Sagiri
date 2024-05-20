@@ -46,10 +46,10 @@ avatar:
   effect: false
 
 # Disable all banner image
-disable_top_img: true
+disable_top_img: false
 
 # The banner image of home page
-index_img:
+index_img: /images/index-title.jpg
 
 # If the banner of page not setting, it will show the top_img
 default_top_img:
@@ -85,7 +85,6 @@ cover:
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
-    # - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
@@ -166,7 +165,7 @@ toc:
   page: false
   number: true
   expand: true
-  style_simple: false # for post
+  style_simple: true # for post
   scroll_percent: true
 
 # Related Articles
@@ -206,6 +205,7 @@ footer:
     enable: true
     since: 2024
   custom_text:
+    - 托管服务 <a href="https://pages.github.com/">GitHub Pages</a> | 精神支持 <a href="https://zh.moegirl.org.cn/%E5%92%8C%E6%B3%89%E7%BA%B1%E9%9B%BE">和泉纱雾</a>
   copyright: true # Copyright of theme and framework
 
 # aside (側邊欄)
@@ -639,15 +639,15 @@ text_align_justify: false
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background: url(/hexo-blog-butterfly/images/index-title.jpg)
+background: url(/hexo-blog/images/index-title.jpg)
 
 # Footer Background
-footer_bg: true
+footer_bg: false
 
 # Add mask to header or footer (为 header 或 footer 添加黑色半透遮罩)
 mask:
   header: true
-  footer: true
+  footer: false
 
 # the position of bottom right button/default unit: px (右下角按鈕距離底部的距離/默認單位為px)
 rightside_bottom:
@@ -746,12 +746,17 @@ hr_icon:
 
 # the subtitle on homepage (主頁subtitle)
 subtitle:
-  enable: false
+  enable: true
   # Typewriter Effect (打字效果)
   effect: true
   # Customize typed.js (配置typed.js)
   # https://github.com/mattboldt/typed.js/#customization
   typed_option:
+    typeSpeed: 100
+    startDelay: 100
+    backDelay: 3000
+    loop: true
+    showCursor: false
   # source 調用第三方服務
   # source: false 關閉調用
   # source: 1  調用一言網的一句話（簡體） https://hitokoto.cn/
@@ -761,6 +766,9 @@ subtitle:
   source: false
   # 如果關閉打字效果，subtitle 只會顯示 sub 的第一行文字
   sub:
+    - 我是勇者政宗！
+    - 必杀技！
+    - 雷&emsp;神&emsp;断&emsp;灭&emsp;剑&emsp;！
 
 # Loading Animation (加載動畫)
 preloader:
