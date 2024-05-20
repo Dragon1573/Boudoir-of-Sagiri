@@ -1009,6 +1009,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"hexo-asset-img@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "hexo-asset-img@npm:1.1.0"
+  checksum: 10c0/db8c7505b3dd64e64635d0eddad96621d2a3027b75b4bdc80d9707320c1ff8bd6b00d9210df8b5e0794917630a4b75d5bba7ad4592218c5c9748c8bf139ebfa1
+  languageName: node
+  linkType: hard
+
 "hexo-cli@npm:^4.3.2":
   version: 4.3.2
   resolution: "hexo-cli@npm:4.3.2"
@@ -1178,7 +1185,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hexo-renderer-stylus@npm:^3.0.0, hexo-renderer-stylus@npm:^3.0.1":
+"hexo-renderer-stylus@npm:^3.0.1":
   version: 3.0.1
   resolution: "hexo-renderer-stylus@npm:3.0.1"
   dependencies:
@@ -1208,7 +1215,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "hexo-site@workspace:."
   dependencies:
-    hexo: "npm:^7.0.0"
+    hexo: "npm:^7.2.0"
+    hexo-asset-img: "npm:^1.1.0"
     hexo-filter-nofollow: "npm:^2.0.2"
     hexo-generator-archive: "npm:^2.0.0"
     hexo-generator-category: "npm:^2.0.0"
@@ -1220,7 +1228,7 @@ __metadata:
     hexo-renderer-ejs: "npm:^2.0.0"
     hexo-renderer-kramed: "npm:^0.1.4"
     hexo-renderer-pug: "npm:^3.0.0"
-    hexo-renderer-stylus: "npm:^3.0.0"
+    hexo-renderer-stylus: "npm:^3.0.1"
     hexo-server: "npm:^3.0.0"
     hexo-theme-butterfly: "npm:^4.13.0"
     hexo-theme-landscape: "npm:^1.0.0"
@@ -1297,7 +1305,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hexo@npm:^7.0.0":
+"hexo@npm:^7.2.0":
   version: 7.2.0
   resolution: "hexo@npm:7.2.0"
   dependencies:
