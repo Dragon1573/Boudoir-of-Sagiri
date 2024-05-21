@@ -13,7 +13,9 @@ categories: 技术杂谈
 
 最近在折腾公司内网的简易爬虫项目，希望将整个爬虫脚本打包成一个可执行文件，脱离复杂的 Python 和 Nodejs 开发环境搭建，让毫无开发基础的同事也能使用这个爬虫应用。
 
+{% note warning %}
 本项目在 Windows 上进行开发，项目的目标执行环境也是 Windows amd64 ，以下操作均在 Windows Powershell 7 上进行。
+{% endnote %}
 
 ## 方法
 
@@ -64,9 +66,13 @@ npx ncc build ./app.js -o ./dist
 
 4. （可选）复制得到的 `./dist/app.exe` 带有 Nodejs 官方数字签名，数据注入后签名将失效，运行时可能存在各种警告信息，我们需要借助 *Visual Studio IDE 2022* 或者 *Visual Studio 生成工具 2022* 里提供的 `signtool.exe` 把签名信息擦除。
 
+   {% note warning %}
+
    `signtool.exe` 在 VS 安装时不会被自动添加到 `$env:PATH` 系统环境变量，Microsoft 为此提供了专门的 *Developer Powershell for VS 2022* 命令行环境，在这个环境下才能使用 `signtool.exe` 。
 
    如果你选择不擦除签名信息，也可以直接忽略下一步中由 `postject` 产生的所有警告。
+
+   {% endnote %}
 
    ```powershell
    signtool remove /s ./dist/app.exe
@@ -80,8 +86,12 @@ npx ncc build ./app.js -o ./dist
 
 6. （可选）我们可以对注入完成后的可执行文件重新签名。
 
-   即使不签名，可执行文件也能正常运行。
+   {% note info %}
 
+   即使不签名，可执行文件也能正常运行。
+   
+   {% endnote %}
+   
    ```powershell
    signtool sign /fd SHA256 ./dist/app.exe
    ```

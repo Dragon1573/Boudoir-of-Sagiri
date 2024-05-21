@@ -8,7 +8,9 @@ categories: 技术杂谈
 
 ## Sparse Checkout（稀疏检出）
 
+{% note info %}
 本段内容参考 [Git 官方文档](https://www.git-scm.com/docs/git-sparse-checkout) 。
+{% endnote %}
 
 在面对体量尤为巨大的 Git 仓库时， `git-sparse-checkout` 能够极大程度地压缩你的工作目录树，让你在当前庞大的 Commit 中只检出你希望跟踪的子树。
 

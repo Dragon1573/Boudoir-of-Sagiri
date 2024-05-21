@@ -10,7 +10,7 @@ categories: 技术杂谈
 
 ## Jupyter Notebook 的 Shell 功能
 
-![Jupyter Notebook 主界面](https://img-blog.csdnimg.cn/bfa7682b7f104209ba998fc5c0171536.png)
+![Jupyter Notebook 主界面](jupyter-notebook-switch-default-shell/bfa7682b7f104209ba998fc5c0171536.png)
 
 Jupyter Notebook 除了提供各式各样的 Kernel 以支持不同的编程语言（默认仅提供基于`ipykernel`的 *Python 3* 内核，其他内核需要自行安装），还提供了 **Terminal** 菜单让用户像使用 Web Shell 一样使用 Shell 终端，用户可以借助这个 **Terminal** 菜单，在 Web 中打开新选项卡访问设备的默认 Shell ，在其中执行各类 Shell 命令。
 
@@ -51,4 +51,4 @@ Jupyter Notebook 安装完成后，并没有任何的配置文件，一切的配
 
 4. 保存文件并退出，重新启动 Jupyter Notebook ，进入 **Terminal** 会话，可以看到加载的 Shell 已经成功地更换为 **Powershell Core** 。
 
-   ![修改后的终端界面](https://img-blog.csdnimg.cn/3efd2b19f6f84e34bf27c76b5d7acaf8.png)
+   ![修改后的终端界面](jupyter-notebook-switch-default-shell/bfa7682b7f104209ba998fc5c0171536.png)

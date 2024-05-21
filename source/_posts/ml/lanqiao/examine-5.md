@@ -28,14 +28,12 @@ mathjax: true
 
 ## 引导聚集（Bagging / Bootstrap Aggregation）
 
-假设我们有一个训练集 $X$。我们使用自助法生成样本 $X_1,X_2,\cdots,X_M$ 。现在，我们在每个自助样本上分别训练分类器 ![图片描述](https://dn-simplecloud.shiyanlou.com/courses/uid917549-20210902-1630544112687) ，最终的分类器将对所有这些单独的分类器的输出取均值。在分类情形下，这种技术即 **投票（voting）** ：
+假设我们有一个训练集 $X$。我们使用自助法生成样本 $X_1,X_2,\cdots,X_M$ 。现在，我们在每个自助样本上分别训练分类器 $\mathcal{L}_i(x)$ ，最终的分类器将对所有这些单独的分类器的输出取均值。在分类情形下，这种技术即 **投票（voting)** ：
 $$
 \mathcal{L}(x) = \frac{1}{M} \sum_{i = 1}^M \mathcal{L}_i(x)
 $$
 
-::: center
 ![Bagging 投票技术](examine-5/Examine-5-01.png)
-:::
 
 在回归问题中，通过对回归结果取均值，引导聚集将均方误差降至 $\frac{1}{M}$ （ $M$ 为回归器数量）。
 
@@ -116,10 +114,12 @@ $$
 
 随机森林、引导聚集决策树的偏差与单棵决策树相同：
 
-<div style="text-align: center; padding: 20px 0px;">
-<img src="https://dn-simplecloud.shiyanlou.com/courses/uid917549-20210902-1630544268441" />
-</div>
-
+$$
+\begin{eqnarray}
+\text{Bias} & = & \mu(x) - \text{E}_{Z}f_{rf}(x) \\
+& = & \mu(x) - \text{E}_{Z} \text{E}_{\Theta | Z}T(x,\Theta(Z))
+\end{eqnarray}
+$$
 随机森林和引导聚集决策树的偏差通常比单棵决策树大，因为随机过程和样本空间缩减使得模型受到了限制。引导聚集决策树和随机森林在预测准确率上比单棵决策树要高的原因仅仅源自方差的降低。
 
 ### 极端随机树（Extremely Randomized Tree）
@@ -204,10 +204,15 @@ $$
   $$
 
 - $L_q$ （分位数）损失：使用分位数而不是中位数。
-  <div  style="text-align: center; padding: 20px 0px;">
-  <img src="https://dn-simplecloud.shiyanlou.com/courses/uid917549-20210902-1630544817026" />
-  </div>
-
+  $$
+  L(y,f) = 
+  \left\{\begin{matrix}
+  (1 - \alpha) \cdot |y - f| , & \text{if} \ y - f \le 0 \\
+  \alpha \cdot |y - f| , & \text{if} \ y - f \gt 0
+  \end{matrix}\right.
+  ,\alpha \in (0,1)
+  $$
+  
 - Humber 损失：鲁棒性强，少量异常值使用 $L_2$ ，数量超过阈值后改为 $L_1$ 。能够减少异常值影响，更关注整体情况。
 
 - 梯度提升算法的底层基础算法不一定是决策树，也可以是其他基础算法。
@@ -216,7 +221,7 @@ $$
 
 ### 分类损失函数
 
-以下分类损失函数适用于二分类问题 ![图片描述](https://dn-simplecloud.shiyanlou.com/courses/uid917549-20210902-1630544942535) 。$L_2$ 也可以完成，但一般不这样。二分类要求损失函数使用对数似然。
+以下分类损失函数适用于二分类问题 $y = \{-1,1\}$ 。$L_2$ 也可以完成，但一般不这样。二分类要求损失函数使用对数似然。
 
 - 逻辑（伯努利）损失：不仅要优化损失，同时要类别之间区别得更开，甚至会惩罚正确预测的分类。
   $$
