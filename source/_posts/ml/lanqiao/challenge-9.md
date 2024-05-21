@@ -20,7 +20,7 @@ categories: 机器学习
 
   > ```python
   > from fbprophet import Prophet
-  >
+  > 
   > model = Prophet()
   > model.fit(train_df)
   > pred_df = model.make_future_dataframe(periods=30, freq='D', include_history=False)
@@ -30,11 +30,16 @@ categories: 机器学习
   >
   > 通过以上的建模预测，我们可以得到如下表格：
   >
-  > |     ds     |    yhat     |
-  > | :--------: | :---------: |
-  > | 2015-12-22 | 3385.507108 |
-  > |     ……     |     ……      |
-  > | 2016-01-20 | 3426.449686 |
+  > <table style="text-align: center;">
+  >     <thead>
+  > 	    <tr><th>ds</th><th>yhat</th></tr>
+  >     </thead>
+  >     <tbody>
+  >         <tr><td>2015-12-22</td><td>3385.507108</td></tr>
+  >         <tr><td>......</td><td>......</td></tr>
+  >         <tr><td>2016-01-20</td><td>3426.449686</td></tr>
+  >     </tbody>
+  > </table>
   >
   > 因此，1月20日当天的预测结果约为3426次。
 

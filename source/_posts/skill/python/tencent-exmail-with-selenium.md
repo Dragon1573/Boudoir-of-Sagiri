@@ -10,7 +10,11 @@ categories: 技术杂谈
 
 ## Selenium 简介
 
+{% note info %}
+
 摘抄自 [Selenium 浏览器自动化项目 | Selenium](https://www.selenium.dev/zh-cn/documentation/)
+
+{% endnote %}
 
 Selenium 是支持 Web 浏览器自动化的一系列工具和库的综合项目。
 
@@ -74,7 +78,11 @@ msedgedriver --version
 
 ## 开发过程
 
+{% note warning %}
+
 此处假设你已经使用任意方式完成了 Selenium 的安装，如果您不清楚该怎么做，请考虑使用 [venv](https://docs.python.org/3.10/library/venv.html) 或 [Poetry](https://python-poetry.org/) 等工具创建虚拟环境，并在其中进行安装。
+
+{% endnote %}
 
 ### 引入依赖
 
