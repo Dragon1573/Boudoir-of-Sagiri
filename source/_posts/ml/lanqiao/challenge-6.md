@@ -44,12 +44,16 @@ mathjax: true
 
 - 代价函数：
 
-  <div style="text-align: center; padding: 20px 0px;">
-  <img src="https://dn-simplecloud.shiyanlou.com/courses/uid917549-20210902-1630588956243" />
-  </div>
-
+  $$
+  J(\theta) =
+  \frac{1}{2m}\sum_{i=1}^{m}{(y^{(i)} - (wx^{(i)}+b))^2}
+  + \lambda \| w \| _1
+  = \frac{1}{2} \text{MSE}(\theta)
+  + \lambda \sum_{i=1}^{n}{|\theta_i|}
+  $$
+  
   - 问题： 该 Lasso 回归模型中，哪些特征对目标值的影响最小？
-
+  
     > ```python
     > pd.DataFrame({
     >  'Features': X.columns,
@@ -58,9 +62,9 @@ mathjax: true
     > ```
     >
     > 可以看出，固定酸（Fixed Acidity）、柠檬酸（Critic Acid）和总二氧化硫（Total Sulfur Dioxide）对目标值的影响最小。
-
+  
   - 问题： 上面调参得到的 Lasso 回归模型中，哪些特征对目标值的影响最小？
-
+  
     > ```python
     > pd.DataFrame({
     >  'Features': X.columns,
@@ -69,9 +73,9 @@ mathjax: true
     > ```
     >
     > 可以看出，柠檬酸对目标值影响最小。
-
+  
   - 问题： 调参得到的 Lasso 回归模型中，训练数据和测试数据上的平均绝对误差 MSE 值是多少？
-
+  
     > ```python
     > print('训练数据：', mean_squared_error(y_train, lasso_cv.predict(X_train_scaled)))
     > print('测试数据：', mean_squared_error(y_holdout, lasso_cv.predict(X_holdout_scaled)))

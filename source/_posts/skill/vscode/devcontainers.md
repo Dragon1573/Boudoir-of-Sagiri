@@ -49,7 +49,9 @@ NoLsp.exe "C:\windows\system32\wsl.exe"
 
 前置环境准备就绪，可以让我们创建一个 PHP 项目了！
 
+{% note warning %}
 在使用 Docker Desktop for Windows 之前，我已经有一个 Ubuntu 22.04 LTS 的 WSL2 实例。后续的个别操作步骤都会默认在它上面执行，Windows 实际操作大同小异，但需要执行的命令可能有所不同。
+{% endnote %}
 
 这个 PHP 项目很简单，只有一个独立的 `index.php` 文件。让我们看一下这个项目的结构：
 

@@ -64,9 +64,9 @@ mathjax: true
 
 ### K-均值算法中 K 值的选择
 
-<div style="text-align: center; padding: 20px 0px;">
-<img src="https://dn-simplecloud.shiyanlou.com/courses/uid917549-20210903-1630635819021" />
-</div>
+$$
+J(C) = \sum_{k=1}^K \sum_{i \in C_k}{\| x_i - \mu_k \|} \to \min_C
+$$
 
 $$
 D(k) = \frac{|J(C_k) - J(C_{k+1})|}{|J(C_{k-1}) - J(C_k)|}  \rightarrow \min\limits_k

@@ -7,7 +7,11 @@ tags:
 categories: 技术杂谈
 ---
 
+{% note info %}
+
 总结自 [@码农高天](https://space.bilibili.com/245645656) 的视频 [BV1La4y1T7Y5](https://www.bilibili.com/video/BV1La4y1T7Y5?vd_source=3e7f43a8180ada8939dbf7b1ab006608) ，非原创内容！
+
+{% endnote %}
 
 ## 简介
 
@@ -66,9 +70,9 @@ f(3)
   ```
 
 - `w` 或者 `where` ，查看程序调用栈。第4行开头的 `>` 指向当前栈帧
-  ::: warning
+  {% note warning %}
   Python 调用栈为从上至下调用，从上至下逐层深入。
-  :::
+  {% endnote %}
 
   ```
   (Pdb) w
@@ -145,11 +149,11 @@ f(3)
   -> def g(data):
   ```
 
-  ::: warning
+  {% note warning %}
   `n` 与 `s` 只在当前行有函数或方法调用时才存在区别！
 
   `n` 跳过函数调用内部逻辑，直接求值并到达下一行，`s` 则进入函数内部逻辑。
-  :::
+  {% endnote %}
 
 -  `retval` ，提示函数即将返回的时候获取函数返回值
 
