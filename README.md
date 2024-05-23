@@ -1,7 +1,7 @@
 # 纱雾の闺房 - 不可进入の房间
 
-<div style="align: center; text-align: center;">
-    <div style="align: center; text-align: center;">
+<div align="center">
+    <div align="center">
         <a href="https://github.com/Dragon1573/Study-Notes/blob/butterfly/LICENSE.txt">
             <img alt="Static Badge" src="https://img.shields.io/badge/License-CC--BY--NC--SA_4.0-%23EF9421?style=flat-square&logo=creative-commons&logoColor=%23EF9421&label=License&color=%23EF9421" />
         </a>
@@ -10,7 +10,7 @@
         </a>
         <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/Dragon1573/Boudoir-of-Sagiri?style=flat-square&label=Repo%20Size" />
     </div>
-    <div style="align: center; text-align: center;">
+    <div align="center">
         <a href="https://www.yarnpkg.cn/">
             <img alt="GitHub package.json dynamic (branch)" src="https://img.shields.io/github/package-json/packageManager/Dragon1573/Boudoir-of-Sagiri/butterfly?style=flat-square&label=Package%20Manager" />
         </a>
