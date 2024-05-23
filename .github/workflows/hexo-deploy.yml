@@ -4,6 +4,11 @@ on:
   push:
     branches:
       - butterfly
+    paths-ignore:
+      - .github/**
+      - .yarn/**
+      - LICENSE.txt
+      - README.md
   workflow_dispatch:
 
 permissions:
