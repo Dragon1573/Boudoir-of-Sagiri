@@ -1,9 +1,18 @@
 # 纱雾の闺房 - 不可进入の房间
 
-<div style="text-align: center">
-    <a href="https://github.com/Dragon1573/Study-Notes/blob/butterfly/LICENSE.txt"><img alt="GitHub License" src="https://img.shields.io/github/license/Dragon1573/Study-Notes?style=flat-square"></a>
-    <a href="https://blog.dragon1573.wang/"><img alt="GitHub deployments" src="https://img.shields.io/github/deployments/Dragon1573/Study-Notes/github-pages?style=flat-square&logo=github&label=GitHub%20Pages">
-</div>
+<center>
+    <a href="https://github.com/Dragon1573/Study-Notes/blob/butterfly/LICENSE.txt">
+        <img alt="Static Badge" src="https://img.shields.io/badge/License-CC--BY--NC--SA_4.0-%23EF9421?style=flat-square&logo=creative-commons&logoColor=%23EF9421&label=License&color=%23EF9421" />
+    </a>
+    <a href="https://blog.dragon1573.wang/">
+        <img alt="GitHub deployments" src="https://img.shields.io/github/deployments/Dragon1573/Study-Notes/github-pages?style=flat-square&logo=github&label=GitHub%20Pages" />
+    </a>
+    <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/Dragon1573/Boudoir-of-Sagiri?style=flat-square&label=Repo%20Size" />
+    <br />
+    <img alt="GitHub package.json dynamic (branch)" src="https://img.shields.io/github/package-json/packageManager/Dragon1573/Boudoir-of-Sagiri/butterfly?style=flat-square&label=Package%20Manager" />
+    <img alt="GitHub package.json dev/peer/optional dependency version" src="https://img.shields.io/github/package-json/dependency-version/Dragon1573/Boudoir-of-Sagiri/dev/hexo?style=flat-square&label=Hexo" />
+    <img alt="GitHub package.json dev/peer/optional dependency version" src="https://img.shields.io/github/package-json/dependency-version/Dragon1573/Boudoir-of-Sagiri/dev/hexo-theme-butterfly?style=flat-square&label=Butterfly" />
+</center>
 
 ## :sparkles: 介绍
 
@@ -37,4 +46,3 @@ yarn run build
 除使用 *Yarnpkg* 引入的第三方依赖项外（它们有各自的开源许可证），本站其他内容均使用 **CC-BY-NC-SA 4.0** 许可证授权开源。禁止本站以商业为目的二次部署！
 
 © 2024-至今 Dragon1573，版权所有。
-
