@@ -37,7 +37,7 @@ if (screen.width >= 768) {
 			//apiPath: "https://live2d.fghrsh.net/api/",
 			cdnPath: "/live2d_api/",
 			// tools: ["hitokoto", "asteroids", "switch-model", "switch-texture", "photo", "info", "quit"]
-			tools: ["hitokoto", "switch-model", "switch-texture", "photo", "info", "quit"]
+			tools: ["hitokoto", "photo", "info", "quit"]
 		});
 	});
 }
