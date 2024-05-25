@@ -917,6 +917,7 @@ css_prefix: true
 inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
+    - <script src="/live2d-widget/autoload.js"></script>
   bottom:
     # - <script src="xxxx"></script>
 
