@@ -122,12 +122,6 @@ markdown:
     - markdown-it-sub
     - markdown-it-abbr
     - markdown-it-emoji
-  anchors:
-    level: 3
-    collisionSuffix: 'v'
-    permalink: false
-    permalinkClass: header-anchor
-    permalinkSymbol: ¶
 
 ## 搜索配置
 search:
