@@ -122,6 +122,8 @@ markdown:
     - markdown-it-sub
     - markdown-it-abbr
     - markdown-it-emoji
+    - markdown-it-mathjax3
+    - markdown-it-merge-cells
 
 ## 搜索配置
 search:
