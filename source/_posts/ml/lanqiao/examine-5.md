@@ -16,7 +16,7 @@ mathjax: true
 
   > 假设群体需要通过多数表决来做出一个决定，表决的结果可能是正确或者错误的。每个投票者有一部分独立的个人信息，这个信息有 $p$ 的可能是正确的，投票者根据 $p$ 做出决定。投票得出结果的正确性由 $p$ 决定：
   > $$
-  > \mu = \sum_{i=m}^{N}{N\choose i}p^i(1-p)^{N-i}
+  > \mu = \sum_{i=m}^{N} {N\choose i} p^i (1-p)^{N-i}
   > $$
   > 其中：$N$ 为陪审团人数，$m=\left\lfloor\frac{N}{2}\right\rfloor+1$ 为构成多数的最小人数，$N \choose i$ 是 **组合数** ，$p$ 是单个评审员做出正确决策的概率，$\mu$ 是陪审团整体做出正确决策的概率。
   >
@@ -116,8 +116,8 @@ $$
 
 $$
 \begin{eqnarray}
-\text{Bias} & = & \mu(x) - \text{E}_{Z}f_{rf}(x) \\
-& = & \mu(x) - \text{E}_{Z} \text{E}_{\Theta | Z}T(x,\Theta(Z))
+\text{Bias} & = & \mu(x) - {\text{E} _Z} {f _{rf}(x)} \\
+& = & \mu(x) - {\text{E}_ Z} {\text{E} _{\Theta | Z}} {T(x,\Theta(Z))}
 \end{eqnarray}
 $$
 随机森林和引导聚集决策树的偏差通常比单棵决策树大，因为随机过程和样本空间缩减使得模型受到了限制。引导聚集决策树和随机森林在预测准确率上比单棵决策树要高的原因仅仅源自方差的降低。
@@ -166,7 +166,7 @@ $$
   - 未经正则化：
 
     $$
-    VI(x_j) = \frac{\sum_{T=1}^{N}VI^{T}(x_j)}{N}
+    VI(x_j) = \frac{ \sum_{T=1}^N {VI^{T}(x_j)} }{N}
     $$
 
   - 标准差正则化：
