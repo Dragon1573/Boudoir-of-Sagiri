@@ -12,7 +12,7 @@
     "version": "7.2.0"
   },
   "devDependencies": {
-    "hexo": "^7.2.0",
+    "hexo": "^7.3.0",
     "hexo-asset-img": "^1.1.0",
     "hexo-filter-nofollow": "^2.0.2",
     "hexo-generator-archive": "^2.0.0",
