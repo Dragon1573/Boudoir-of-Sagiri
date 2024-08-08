@@ -436,6 +436,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"color-loggers@npm:^0.3.1":
+  version: 0.3.2
+  resolution: "color-loggers@npm:0.3.2"
+  checksum: 10c0/8dda47e66ea3232d136ca75fb4ea96625d75a669bfc0dabb029123120c9c5561b60bf9691a69e634626f99bd96cd1468cfc377cf01877a392a549269f739b25b
+  languageName: node
+  linkType: hard
+
 "color-name@npm:~1.1.4":
   version: 1.1.4
   resolution: "color-name@npm:1.1.4"
@@ -1316,7 +1323,7 @@ __metadata:
     markdown-it-emoji: "npm:^3.0.0"
     markdown-it-mathjax3: "npm:^4.3.2"
     markdown-it-merge-cells: "npm:^2.0.0"
-    yarn-upgrade-all: "npm:^0.7.2"
+    yarn-upgrade-all: "npm:^0.7.4"
   languageName: unknown
   linkType: soft
 
@@ -3290,11 +3297,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yarn-upgrade-all@npm:^0.7.2":
-  version: 0.7.2
-  resolution: "yarn-upgrade-all@npm:0.7.2"
+"yarn-upgrade-all@npm:^0.7.4":
+  version: 0.7.4
+  resolution: "yarn-upgrade-all@npm:0.7.4"
+  dependencies:
+    color-loggers: "npm:^0.3.1"
   bin:
     yarn-upgrade-all: build/index.js
-  checksum: 10c0/9c004879f6f82dc2fca6a5a62553b408d6e4c863d0a038c68cc95175f12cf30aeb09bae8a7948c96dda4cfd9403916f73ccbb664513e6c1007e012e60e8f85a9
+  checksum: 10c0/f2ae28aa67769bde3dffb0ae25f3f345a0e166b9ab1ca304bff29d7605574c25fd4ec27923c39dd3a5ab21cff93a39155d910f6d3f3c4b3a7f8d55c1931b72ab
   languageName: node
   linkType: hard
