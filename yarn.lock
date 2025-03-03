@@ -1318,7 +1318,7 @@ __metadata:
     hexo-renderer-pug: "npm:^3.0.0"
     hexo-renderer-stylus: "npm:^3.0.1"
     hexo-server: "npm:^3.0.0"
-    hexo-theme-butterfly: "npm:^5.3.3"
+    hexo-theme-butterfly: "npm:^5.3.4"
     hexo-wordcount: "npm:^6.0.1"
     markdown-it-emoji: "npm:^3.0.0"
     markdown-it-mathjax3: "npm:^4.3.2"
@@ -1327,13 +1327,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"hexo-theme-butterfly@npm:^5.3.3":
-  version: 5.3.3
-  resolution: "hexo-theme-butterfly@npm:5.3.3"
+"hexo-theme-butterfly@npm:^5.3.4":
+  version: 5.3.4
+  resolution: "hexo-theme-butterfly@npm:5.3.4"
   dependencies:
     hexo-renderer-pug: "npm:^3.0.0"
     hexo-renderer-stylus: "npm:^3.0.1"
-  checksum: 10c0/6f34128a1c52acf04f2f62203fb17b0122f6bcc711e7b4f3357cccc2d8c019686a888e144157607190d2f6c8d2e0fcf9dd85abc4697436465beca6362c52e176
+  checksum: 10c0/a8159883c47e142a3b3ef2cd9edf3f27a64fa9a301258243d58bfa87905fc4a9bb155365fe8d1dc219345ac2b9fd0c9a11a9c13ec6c684bdf8f2b231d54e10af
   languageName: node
   linkType: hard
 
