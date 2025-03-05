@@ -34,5 +34,5 @@
     "markdown-it-merge-cells": "^2.0.0",
     "yarn-upgrade-all": "^0.7.5"
   },
-  "packageManager": "yarn@4.6.0"
+  "packageManager": "yarn@4.7.0"
 }
