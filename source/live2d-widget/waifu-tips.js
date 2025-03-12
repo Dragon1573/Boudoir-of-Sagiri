@@ -8,13 +8,18 @@
     function e(e) {
         return Array.isArray(e) ? e[Math.floor(Math.random() * e.length)] : e
     }
+    function escapeHTML(str) {
+        var div = document.createElement('div');
+        div.appendChild(document.createTextNode(str));
+        return div.innerHTML;
+    }
     let t;
 
     function o(o, s, n) {
         if (!o || sessionStorage.getItem("waifu-text") && sessionStorage.getItem("waifu-text") > n) return;
         t && (clearTimeout(t), t = null), o = e(o), sessionStorage.setItem("waifu-text", n);
         const i = document.getElementById("waifu-tips");
-        i.innerHTML = o, i.classList.add("waifu-tips-active"), t = setTimeout((() => {
+        i.innerHTML = escapeHTML(o), i.classList.add("waifu-tips-active"), t = setTimeout((() => {
             sessionStorage.removeItem("waifu-text"), i.classList.remove("waifu-tips-active")
         }), s)
     }
@@ -164,14 +169,14 @@
                         selector: n,
                         text: i
                     } of t.mouseover)
-                        if (s.target.matches(n)) return i = e(i), i = i.replace("{text}", s.target.innerText),
+                        if (s.target.matches(n)) return i = e(i), i = i.replace("{text}", escapeHTML(s.target.innerText)),
                             void o(i, 4e3, 8)
                 })), window.addEventListener("click", (s => {
                     for (let {
                         selector: n,
                         text: i
                     } of t.click)
-                        if (s.target.matches(n)) return i = e(i), i = i.replace("{text}", s.target.innerText),
+                        if (s.target.matches(n)) return i = e(i), i = i.replace("{text}", escapeHTML(s.target.innerText)),
                             void o(i, 4e3, 8)
                 })), t.seasons.forEach((({
                     date: t,
