@@ -1095,10 +1095,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hexo-asset-img@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "hexo-asset-img@npm:1.1.0"
-  checksum: 10c0/db8c7505b3dd64e64635d0eddad96621d2a3027b75b4bdc80d9707320c1ff8bd6b00d9210df8b5e0794917630a4b75d5bba7ad4592218c5c9748c8bf139ebfa1
+"hexo-asset-img@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "hexo-asset-img@npm:1.2.0"
+  checksum: 10c0/53fc22983e0ca279fc6c1f0a0f6d91cb337bc9583a8005c3a12f98e344dc0289cd72dafbf1c2a83fa806e3cc07f283e546d40493246ac9221db9e19706c4bd45
   languageName: node
   linkType: hard
 
@@ -1311,7 +1311,7 @@ __metadata:
   resolution: "hexo-site@workspace:."
   dependencies:
     hexo: "npm:^7.3.0"
-    hexo-asset-img: "npm:^1.1.0"
+    hexo-asset-img: "npm:^1.2.0"
     hexo-filter-nofollow: "npm:^2.0.2"
     hexo-generator-archive: "npm:^2.0.0"
     hexo-generator-category: "npm:^2.0.0"
