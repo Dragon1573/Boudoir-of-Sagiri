@@ -1,0 +1,63 @@
+name: 'CodeQL Check'
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: '0 0 * * 1'
+
+env:
+  # Use HK SAR., China would be better
+  TZ: 'Asia/HongKong'
+
+jobs:
+  analyze:
+    name: Analyze
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          # We need to build the project, full logs is required
+          - language: javascript-typescript
+            depth: 0
+          # Only latest commit is required
+          - language: actions
+            depth: 1
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: ${{ matrix.depth }}
+
+    - name: Initialize CodeQL
+      uses: github/codeql-action/init@v3
+      with:
+        languages: ${{ matrix.language }}
+
+    # ----- Below steps are only required for JavaScript & TypeScript check -----
+    - name: Setup Node.js environment
+      if: matrix.language == 'javascript-typescript'
+      uses: actions/setup-node@v4
+      with:
+        node-version: latest
+        token: ${{ secrets.GITHUB_TOKEN }}
+        cache: yarn
+        cache-dependency-path: yarn.lock
+
+    - name: Build the project
+      if: matrix.language == 'javascript-typescript'
+      run: |
+        yarn run build
+    # ----- Above steps are only required for JavaScript & TypeScript check -----
+
+    - name: Perform CodeQL Analysis
+      uses: github/codeql-action/analyze@v3
+      with:
+        category: '/language:${{ matrix.language }}'
