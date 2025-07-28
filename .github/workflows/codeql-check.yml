@@ -42,6 +42,23 @@ jobs:
       with:
         fetch-depth: ${{ matrix.depth }}
 
+    - name: Setup Node.js
+      if: matrix.language == 'javascript-tyupescript'
+      uses: actions/setup-node@v4
+      with:
+        node-version: latest
+        token: ${{ secrets.GITHUB_TOKEN }}
+        cache: yarn
+        cache-dependency-path: '**/yarn.lock'
+
+    - name: Install dependencies
+      if: matrix.language == 'javascript-tyupescript'
+      run: yarn install --frozen-lockfile
+
+    - name: Build project
+      if: matrix.language == 'javascript-tyupescript'
+      run: yarn run build
+
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v3
       with:
