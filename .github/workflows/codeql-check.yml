@@ -2,7 +2,12 @@ name: 'CodeQL Check'
 
 on:
   push:
+    branches:
+      - butterfly
+      - dependabot/**
   pull_request:
+    branches:
+      - butterfly
   schedule:
     - cron: '0 0 * * 1'
 
@@ -12,11 +17,12 @@ env:
 
 jobs:
   analyze:
-    name: Analyze
+    name: Analyze ${{ matrix.language }}
     runs-on: ubuntu-latest
     permissions:
       actions: read
       contents: read
+      packages: read
       security-events: write
 
     strategy:
@@ -24,11 +30,13 @@ jobs:
       matrix:
         include:
           # We need to build the project, full logs is required
-          - language: javascript-typescript
+          - build-mode: manual
             depth: 0
+            language: javascript-typescript
           # Only latest commit is required
-          - language: actions
+          - build-mode: none
             depth: 1
+            language: actions
 
     steps:
     - name: Checkout repository
@@ -40,10 +48,11 @@ jobs:
       uses: github/codeql-action/init@v3
       with:
         languages: ${{ matrix.language }}
+        build-mode: ${{ matrix.build-mode }}
 
     # ----- Below steps are only required for JavaScript & TypeScript check -----
     - name: Setup Node.js environment
-      if: matrix.language == 'javascript-typescript'
+      if: matrix.build-mode == 'manual'
       uses: actions/setup-node@v4
       with:
         node-version: latest
@@ -52,7 +61,7 @@ jobs:
         cache-dependency-path: yarn.lock
 
     - name: Build the project
-      if: matrix.language == 'javascript-typescript'
+      if: matrix.build-mode == 'manual'
       run: |
         yarn run build
     # ----- Above steps are only required for JavaScript & TypeScript check -----
