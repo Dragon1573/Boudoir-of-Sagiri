@@ -30,12 +30,10 @@ jobs:
       matrix:
         include:
           # We need to build the project, full logs is required
-          - build-mode: manual
-            depth: 0
+          - depth: 0
             language: javascript-typescript
           # Only latest commit is required
-          - build-mode: none
-            depth: 1
+          - depth: 1
             language: actions
 
     steps:
@@ -48,23 +46,7 @@ jobs:
       uses: github/codeql-action/init@v3
       with:
         languages: ${{ matrix.language }}
-        build-mode: ${{ matrix.build-mode }}
-
-    # ----- Below steps are only required for JavaScript & TypeScript check -----
-    - name: Setup Node.js environment
-      if: matrix.build-mode == 'manual'
-      uses: actions/setup-node@v4
-      with:
-        node-version: latest
-        token: ${{ secrets.GITHUB_TOKEN }}
-        cache: yarn
-        cache-dependency-path: yarn.lock
-
-    - name: Build the project
-      if: matrix.build-mode == 'manual'
-      run: |
-        yarn run build
-    # ----- Above steps are only required for JavaScript & TypeScript check -----
+        build-mode: none
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
