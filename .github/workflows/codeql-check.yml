@@ -42,18 +42,16 @@ jobs:
       with:
         fetch-depth: ${{ matrix.depth }}
 
-    - name: Setup Node.js
+    - name: Setup Yarnpkg
       if: matrix.language == 'javascript-typescript'
-      uses: actions/setup-node@v4
+      uses: threeal/setup-yarn-action@v2
       with:
-        node-version: latest
-        token: ${{ secrets.GITHUB_TOKEN }}
-        cache: yarn
-        cache-dependency-path: '**/yarn.lock'
+        version: latest
+        cache: true
 
     - name: Install dependencies
       if: matrix.language == 'javascript-typescript'
-      run: yarn install --frozen-lockfile
+      run: yarn install --immutable
 
     - name: Build project
       if: matrix.language == 'javascript-typescript'
