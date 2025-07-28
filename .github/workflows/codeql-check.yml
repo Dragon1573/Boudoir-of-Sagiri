@@ -43,7 +43,7 @@ jobs:
         fetch-depth: ${{ matrix.depth }}
 
     - name: Setup Node.js
-      if: matrix.language == 'javascript-tyupescript'
+      if: matrix.language == 'javascript-typescript'
       uses: actions/setup-node@v4
       with:
         node-version: latest
@@ -52,11 +52,11 @@ jobs:
         cache-dependency-path: '**/yarn.lock'
 
     - name: Install dependencies
-      if: matrix.language == 'javascript-tyupescript'
+      if: matrix.language == 'javascript-typescript'
       run: yarn install --frozen-lockfile
 
     - name: Build project
-      if: matrix.language == 'javascript-tyupescript'
+      if: matrix.language == 'javascript-typescript'
       run: yarn run build
 
     - name: Initialize CodeQL
