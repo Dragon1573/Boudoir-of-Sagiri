@@ -30,8 +30,8 @@ code_word_wrap: false
 #   icon: link || the description || color
 social:
   fab fa-github: https://github.com/Dragon1573 || Github
-  fa-brands fa-bilibili: https://space.bilibili.com/289561900 || 是纱雾酱哟
-  fa-brands fa-stack-overflow: https://stackoverflow.com/users/14452959/dragon1573 || Dragon1573
+  fa-brands fa-telegram: https://t.me/dragon_maid_bot || Telegram
+  fa-brands fa-bilibili: https://space.bilibili.com/289561900 || Bilibili
 
 # Image (圖片設置)
 # --------------------------------------
