@@ -77,7 +77,7 @@
             callback: function () {
                 fetch("https://v1.hitokoto.cn").then((e => e.json())).then((e => {
                     const t =
-                        `这句一言来自 <span>「${e.from}」</span>，是 <span>${e.creator}</span> 在 hitokoto.cn 投稿的。`;
+                        `这句一言来自「${e.from}」，是 ${e.creator} 在 hitokoto.cn 投稿的。`;
                     o(e.hitokoto, 6e3, 9), setTimeout((() => {
                         o(t, 4e3, 9)
                     }), 6e3)
@@ -150,7 +150,7 @@
                                 n = t.split("-")[1] || s;
                             if (s <= e.getHours() && e.getHours() <= n) return o
                         }
-                    const t = `欢迎阅读<span>「${document.title.split(" - ")[0]}」</span>`;
+                    const t = `欢迎阅读「${document.title.split(" - ")[0]}」`;
                     let o;
                     if ("" !== document.referrer) {
                         const e = new URL(document.referrer),
@@ -161,7 +161,7 @@
                                 google: "谷歌搜索"
                             };
                         return location.hostname === e.hostname ? t : (o = s in n ? n[s] : e.hostname,
-                            `Hello！来自 <span>${o}</span> 的朋友<br>${t}`)
+                            `Hello！来自 ${o} 的朋友<br>${t}`)
                     }
                     return t
                 }(t.time), 7e3, 11), window.addEventListener("mouseover", (s => {
@@ -214,7 +214,7 @@
                             callback: o
                         } = n[e];
                         document.getElementById("waifu-tool").insertAdjacentHTML("beforeend",
-                            `<span id="waifu-tool-${e}">${t}</span>`), document.getElementById(`waifu-tool-${e}`).addEventListener(
+                            `<span id="waifu-tool-${e}">${t}`), document.getElementById(`waifu-tool-${e}`).addEventListener(
                                 "click", o)
                     }
             }(),
@@ -229,7 +229,7 @@
             waifuPath: e,
             apiPath: t
         }), document.body.insertAdjacentHTML("beforeend",
-            '<div id="waifu-toggle">\n            <span>看板娘</span>\n        </div>');
+            '<div id="waifu-toggle">\n            看板娘\n        </div>');
         const o = document.getElementById("waifu-toggle");
         o.addEventListener("click", (() => {
             o.classList.remove("waifu-toggle-active"), o.getAttribute("first-time") ? (i(e), o.removeAttribute(
