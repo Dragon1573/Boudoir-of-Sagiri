@@ -747,7 +747,7 @@ hr_icon:
 subtitle:
   enable: true
   # Typewriter Effect (打字效果)
-  effect: true
+  effect: false
   # Customize typed.js (配置typed.js)
   # https://github.com/mattboldt/typed.js/#customization
   typed_option:
@@ -765,9 +765,7 @@ subtitle:
   source: false
   # 如果關閉打字效果，subtitle 只會顯示 sub 的第一行文字
   sub:
-    - 我是勇者政宗！
-    - 必杀技！
-    - 雷&emsp;神&emsp;断&emsp;灭&emsp;剑&emsp;！
+    - ❤我才不认识叫这个名字的人～
 
 # Loading Animation (加載動畫)
 preloader:
