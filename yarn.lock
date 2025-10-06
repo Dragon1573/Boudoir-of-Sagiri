@@ -1337,7 +1337,7 @@ __metadata:
     hexo-theme-butterfly: "npm:^5.5.1"
     hexo-wordcount: "npm:^6.0.1"
     markdown-it-emoji: "npm:^3.0.0"
-    markdown-it-mathjax3: "npm:5.2.0"
+    markdown-it-mathjax3: "npm:^5.2.0"
     markdown-it-merge-cells: "npm:^2.0.0"
     yarn-upgrade-all: "npm:^0.7.5"
   languageName: unknown
@@ -1867,7 +1867,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"markdown-it-mathjax3@npm:5.2.0":
+"markdown-it-mathjax3@npm:^5.2.0":
   version: 5.2.0
   resolution: "markdown-it-mathjax3@npm:5.2.0"
   dependencies:
