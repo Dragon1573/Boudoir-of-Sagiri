@@ -231,7 +231,7 @@ reward:
     - img: /images/wechat.png
       link:
       text: 微信支付
-    - img: /images/usdt-trc20.png
+    - img: /images/usdt-trc20.jpg
       link:
       text: USDT-TRC20
 
