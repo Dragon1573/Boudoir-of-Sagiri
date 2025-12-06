@@ -8,11 +8,5 @@
     "regions": [
         "hkg1"
     ],
-    "functionFailoverRegions": [
-        "bom1",
-        "hnd1",
-        "icn1",
-        "kix1"
-    ],
     "trailingSlash": false
 }
