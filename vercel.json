@@ -1,0 +1,18 @@
+{
+    "$schema": "https://openapi.vercel.sh/vercel.json",
+    "buildCommand": "yarn run build",
+    "framework": "hexo",
+    "installCommand": "yarn install --immutable",
+    "outputDirectory": "public",
+    "public": true,
+    "regions": [
+        "hkg1"
+    ],
+    "functionFailoverRegions": [
+        "bom1",
+        "hnd1",
+        "icn1",
+        "kix1"
+    ],
+    "trailingSlash": false
+}
