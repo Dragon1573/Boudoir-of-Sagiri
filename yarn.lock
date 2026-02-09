@@ -817,6 +817,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"entities@npm:^7.0.0":
+  version: 7.0.1
+  resolution: "entities@npm:7.0.1"
+  checksum: 10c0/b4fb9937bb47ecb00aaaceb9db9cdd1cc0b0fb649c0e843d05cf5dbbd2e9d2df8f98721d8b1b286445689c72af7b54a7242fc2d63ef7c9739037a8c73363e7ca
+  languageName: node
+  linkType: hard
+
 "env-paths@npm:^2.2.0":
   version: 2.2.1
   resolution: "env-paths@npm:2.2.1"
@@ -906,6 +913,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"fast-xml-parser@npm:^5.3.3":
+  version: 5.3.5
+  resolution: "fast-xml-parser@npm:5.3.5"
+  dependencies:
+    strnum: "npm:^2.1.2"
+  bin:
+    fxparser: src/cli/cli.js
+  checksum: 10c0/ac6232de821c8292436c53a58fc583f073cc5a73d14310b956391512e325e1ef65b950a1d41f5f2715b0d4d363fac2e483d7df1748b344647ea7c7f219a5d2f4
+  languageName: node
+  linkType: hard
+
 "fdir@npm:^6.5.0":
   version: 6.5.0
   resolution: "fdir@npm:6.5.0"
@@ -915,6 +933,16 @@ __metadata:
     picomatch:
       optional: true
   checksum: 10c0/e345083c4306b3aed6cb8ec551e26c36bab5c511e99ea4576a16750ddc8d3240e63826cc624f5ae17ad4dc82e68a253213b60d556c11bfad064b7607847ed07f
+  languageName: node
+  linkType: hard
+
+"feedsmith@npm:2.9.0":
+  version: 2.9.0
+  resolution: "feedsmith@npm:2.9.0"
+  dependencies:
+    entities: "npm:^7.0.0"
+    fast-xml-parser: "npm:^5.3.3"
+  checksum: 10c0/3b28c1f61f8e9fb2240921d7c138798b3c72a31b96cb55e67d6687dff42a5f2158bdfa95fb1f6de55d5ebcc3c33797bf7d30337c897265cd68327d762a5b9472
   languageName: node
   linkType: hard
 
@@ -1211,13 +1239,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hexo-generator-feed@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "hexo-generator-feed@npm:3.0.0"
+"hexo-generator-feed@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "hexo-generator-feed@npm:4.0.0"
   dependencies:
-    hexo-util: "npm:^2.1.0"
-    nunjucks: "npm:^3.0.0"
-  checksum: 10c0/79d1e0995fc1ae57fa0f4e2f127fd8e250589c4ac122dd06296f5d4f7a90db7b35cdcb3e61183be4a4bfd2fdbe59de4fd97fc53dfc3d7ffa1d8b1b59f0a4f269
+    feedsmith: "npm:2.9.0"
+    hexo-util: "npm:4.0.0"
+  checksum: 10c0/5bdb9ddb40839e70c46de52324b40970af78f72f2c3bb53f315be8cd08cd61b6c4c46a82c3ee7d6fe17777416c7535c6976b68bf1375e89bca934ea1f0f925e5
   languageName: node
   linkType: hard
 
@@ -1358,7 +1386,7 @@ __metadata:
     hexo-filter-nofollow: "npm:^2.0.2"
     hexo-generator-archive: "npm:^2.0.0"
     hexo-generator-category: "npm:^2.0.0"
-    hexo-generator-feed: "npm:^3.0.0"
+    hexo-generator-feed: "npm:^4.0.0"
     hexo-generator-index: "npm:^4.0.0"
     hexo-generator-searchdb: "npm:^1.5.0"
     hexo-generator-sitemap: "npm:^3.0.1"
@@ -1386,6 +1414,21 @@ __metadata:
     hexo-util: "npm:^4.0.0"
     moment-timezone: "npm:^0.6.0"
   checksum: 10c0/86ef2be01923e86a81be1d3324c816d18d1cec165c5cfcf66b7f32640ee1c342639bbb1ab2d6277eaf08727625d471a37cbb2b550de0001510cb6322086271f1
+  languageName: node
+  linkType: hard
+
+"hexo-util@npm:4.0.0, hexo-util@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "hexo-util@npm:4.0.0"
+  dependencies:
+    camel-case: "npm:^4.1.2"
+    cross-spawn: "npm:^7.0.3"
+    deepmerge: "npm:^4.2.2"
+    highlight.js: "npm:^11.6.0"
+    htmlparser2: "npm:^10.0.0"
+    prismjs: "npm:^1.29.0"
+    strip-indent: "npm:^3.0.0"
+  checksum: 10c0/57fbd4cedf4153e8e6a7e96f5e91e6e45c0ec622cac03fa7a973c8beb1087e1cfe53fb34826bb6818aaec98ab9bbe4c6ecffc69acbd0dc3b8c120c7dfe7455aa
   languageName: node
   linkType: hard
 
@@ -1417,21 +1460,6 @@ __metadata:
     prismjs: "npm:^1.29.0"
     strip-indent: "npm:^3.0.0"
   checksum: 10c0/43fc9eeb36ae0bb7ddb2d8dac9d9e67728eab5eb3258fd850d2b7467e1a842d0d7e11c649b9f97e383712b175bfc7c8c101e48ac7cd3aaa3bc6258f737acbaa0
-  languageName: node
-  linkType: hard
-
-"hexo-util@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "hexo-util@npm:4.0.0"
-  dependencies:
-    camel-case: "npm:^4.1.2"
-    cross-spawn: "npm:^7.0.3"
-    deepmerge: "npm:^4.2.2"
-    highlight.js: "npm:^11.6.0"
-    htmlparser2: "npm:^10.0.0"
-    prismjs: "npm:^1.29.0"
-    strip-indent: "npm:^3.0.0"
-  checksum: 10c0/57fbd4cedf4153e8e6a7e96f5e91e6e45c0ec622cac03fa7a973c8beb1087e1cfe53fb34826bb6818aaec98ab9bbe4c6ecffc69acbd0dc3b8c120c7dfe7455aa
   languageName: node
   linkType: hard
 
@@ -2268,7 +2296,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nunjucks@npm:^3.0.0, nunjucks@npm:^3.1.6, nunjucks@npm:^3.2.2, nunjucks@npm:^3.2.4":
+"nunjucks@npm:^3.1.6, nunjucks@npm:^3.2.2, nunjucks@npm:^3.2.4":
   version: 3.2.4
   resolution: "nunjucks@npm:3.2.4"
   dependencies:
@@ -2882,6 +2910,13 @@ __metadata:
   dependencies:
     min-indent: "npm:^1.0.0"
   checksum: 10c0/ae0deaf41c8d1001c5d4fbe16cb553865c1863da4fae036683b474fa926af9fc121e155cb3fc57a68262b2ae7d5b8420aa752c97a6428c315d00efe2a3875679
+  languageName: node
+  linkType: hard
+
+"strnum@npm:^2.1.2":
+  version: 2.1.2
+  resolution: "strnum@npm:2.1.2"
+  checksum: 10c0/4e04753b793540d79cd13b2c3e59e298440477bae2b853ab78d548138385193b37d766d95b63b7046475d68d44fb1fca692f0a3f72b03f4168af076c7b246df9
   languageName: node
   linkType: hard
 
