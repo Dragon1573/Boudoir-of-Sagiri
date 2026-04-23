@@ -32,7 +32,7 @@
     "markdown-it-emoji": "^3.0.0",
     "markdown-it-mathjax3": "^5.2.0",
     "markdown-it-merge-cells": "^2.0.0",
-    "yarn-upgrade-all": "^0.7.5"
+    "yarn-upgrade-all": "^0.8.1"
   },
   "packageManager": "yarn@4.13.0"
 }
