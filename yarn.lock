@@ -1400,7 +1400,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "hexo-site@workspace:."
   dependencies:
-    hexo: "npm:^8.1.1"
+    hexo: "npm:^8.1.2"
     hexo-asset-img: "npm:^1.2.0"
     hexo-filter-nofollow: "npm:^2.0.2"
     hexo-generator-archive: "npm:^2.0.0"
@@ -1489,9 +1489,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hexo@npm:^8.1.1":
-  version: 8.1.1
-  resolution: "hexo@npm:8.1.1"
+"hexo@npm:^8.1.2":
+  version: 8.1.2
+  resolution: "hexo@npm:8.1.2"
   dependencies:
     abbrev: "npm:^3.0.0"
     bluebird: "npm:^3.7.2"
@@ -1518,7 +1518,7 @@ __metadata:
     warehouse: "npm:^6.0.0"
   bin:
     hexo: bin/hexo
-  checksum: 10c0/360ccc35025bddb59557cd941dbe760adc9dfb256aa8938f481153ca71f8a762b7d0dece56235120b0489b97351390d43ba7c8dfa948e89513a74232d4385a3c
+  checksum: 10c0/0f0b2926ae4c74440e88f83464656f447d0990da5ca1d6cb9c36d31c04f83d074c2f68b1a45c9e5f0051f5ca6028c93bd8a07ebd4416f701c389f9d1e380d88f
   languageName: node
   linkType: hard
 
