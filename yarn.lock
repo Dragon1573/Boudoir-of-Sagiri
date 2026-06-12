@@ -1416,7 +1416,7 @@ __metadata:
     hexo-renderer-pug: "npm:^3.0.0"
     hexo-renderer-stylus: "npm:^3.0.1"
     hexo-server: "npm:^3.0.0"
-    hexo-theme-butterfly: "npm:^5.5.4"
+    hexo-theme-butterfly: "npm:^5.5.5"
     hexo-wordcount: "npm:^6.0.1"
     markdown-it-emoji: "npm:^3.0.0"
     markdown-it-mathjax3: "npm:^5.2.0"
@@ -1425,15 +1425,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"hexo-theme-butterfly@npm:^5.5.4":
-  version: 5.5.4
-  resolution: "hexo-theme-butterfly@npm:5.5.4"
+"hexo-theme-butterfly@npm:^5.5.5":
+  version: 5.5.5
+  resolution: "hexo-theme-butterfly@npm:5.5.5"
   dependencies:
     hexo-renderer-pug: "npm:^3.0.0"
     hexo-renderer-stylus: "npm:^3.0.1"
     hexo-util: "npm:^4.0.0"
-    moment-timezone: "npm:^0.6.0"
-  checksum: 10c0/86ef2be01923e86a81be1d3324c816d18d1cec165c5cfcf66b7f32640ee1c342639bbb1ab2d6277eaf08727625d471a37cbb2b550de0001510cb6322086271f1
+    moment-timezone: "npm:^0.6.2"
+  checksum: 10c0/72ec8af088c892b06734320bb2edd9989b599c8e12763a78d542cd062be16b2e66cb14856a238f6106f0622d136a6850a854b2ada5f87ed3e724a043cef4db88
   languageName: node
   linkType: hard
 
@@ -2193,12 +2193,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"moment-timezone@npm:^0.6.0":
-  version: 0.6.0
-  resolution: "moment-timezone@npm:0.6.0"
+"moment-timezone@npm:^0.6.2":
+  version: 0.6.2
+  resolution: "moment-timezone@npm:0.6.2"
   dependencies:
     moment: "npm:^2.29.4"
-  checksum: 10c0/16164cf321d8be0bf7d43855286b426c94c8200e0634f2e42cf469f591c6a230ac43f37d3826d76b05ac221f69a571400323fb8625e3d4e8669f4d9ab00fe779
+  checksum: 10c0/dbdca171625edaa73e55e4db152b9d3fe14035766e86c20a4bf881570418ecdbc50cc2d3a84101967b229a5ac0630031b4c3a49b0ba8447a9cd458d76e383cd5
   languageName: node
   linkType: hard
 
