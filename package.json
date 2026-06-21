@@ -9,7 +9,7 @@
     "server": "hexo server"
   },
   "hexo": {
-    "version": "8.1.1"
+    "version": "8.1.2"
   },
   "devDependencies": {
     "hexo": "^8.1.2",
@@ -23,7 +23,7 @@
     "hexo-generator-sitemap": "^3.0.1",
     "hexo-generator-tag": "^2.0.0",
     "hexo-renderer-ejs": "^2.0.0",
-    "hexo-renderer-markdown-it": "^7.1.1",
+    "hexo-renderer-markdown-it": "hexojs/hexo-renderer-markdown-it#491e82a3c5164e1224cdd6dd31e0a0ae70087fd4",
     "hexo-renderer-pug": "^3.0.0",
     "hexo-renderer-stylus": "^3.0.1",
     "hexo-server": "^3.0.0",
