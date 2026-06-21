@@ -4,7 +4,6 @@
     "framework": "hexo",
     "installCommand": "yarn install --immutable",
     "outputDirectory": "public",
-    "public": true,
     "regions": [
         "hkg1"
     ],
