@@ -36,15 +36,16 @@ jobs:
           fetch-depth: 0
           # We use Git Submodules to include themes, so we need this
           submodules: true
+      - name: Extract version of yarn
+        id: check-yarn
+        run: |
+          YARN_VERSION=$(cat package.json | jq -r '.packageManager' | sed 's/.*@//' | sed 's/\+.*//')
+          echo "Detected yarn version: v$YARN_VERSION"
+          echo "YARN_VERSION=$YARN_VERSION" >> "$GITHUB_OUTPUT"
       - uses: threeal/setup-yarn-action@v2
-        name: Setup Node.js environment
+        name: Setup yarn environment
         with:
-          version: latest
-          cache: true
-      # The above step does not cache the node_modules directory
-      # So the following step is necessary
-      - name: Configure Yarn
-        run: yarn config set nodeLinker node-modules
+          version: ${{ steps.check-yarn.outputs.YARN_VERSION }}
       - name: Install required dependencies
         run: yarn install --immutable
       - name: Execute compilation and build
