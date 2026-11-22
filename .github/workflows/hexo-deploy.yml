@@ -29,7 +29,7 @@ jobs:
       url: ${{ steps.deploy.outputs.page_url }}
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         name: Checkout repository
         with:
           # We need full history so Hexo can show correct creation time for each post
@@ -51,11 +51,11 @@ jobs:
       - name: Execute compilation and build
         run: yarn run build
       - name: Setup GitHub Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: ./public
       - name: Deploy site
         id: deploy
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
